@@ -1,0 +1,62 @@
+<!-- How can we club two or more rows or columns into a single row or column in an HTML table? With Example.  
+
+    It can be done by using the rowspan and colspan attribute in HTML. The rowspan is used to combine the number of cells in a row whereas the colspan is used to merge column cells in a table.
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        table,th,td
+        {
+            border: 1px solid black;
+            padding: 5px;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <h1>10. How can we club two or more rows or columns into a single row or column in an HTML table? With Example.</h1>
+    <br><hr>
+    <h2>To make a cell span over multiple rows, rowspan attribute is used. Rowspan Example :</h2>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Janvi</td>
+            <td rowspan="2">24</td>
+            <!-- This cell will take up space on two rows -->
+        </tr>
+        <tr>
+            <td>Prisha</td>
+        </tr>
+    </table>
+    <br><br>
+    <h2>To make a cell span over multiple columns, colspan attribute is used. Colspan Example :</h2>
+    <table>
+        <tr>
+            <th colspan="2">Name</th>
+            <!-- This cell will take up space on two columns -->
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Janvi</td>
+            <td>Prisha</td>
+            <td>24</td>
+        </tr>
+        <tr>
+            <td>Riddhi</td>
+            <td>Hiya</td>
+            <td>25</td>
+        </tr>
+    </table>
+</body>
+</html>
