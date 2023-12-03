@@ -9,7 +9,11 @@
     <script src='main.js'></script>
 </head>
 <body>
-    <iframe src="frameset/html_links.html" width="25%%" height="600"></iframe>
-    <iframe src="frameset/html_introduction.html" width="70%" height="600"></iframe>
+    <form method="post" action="welcome.html">
+        <label>Enter URL *</label>
+        <input type="url" required>
+        <br><br>
+        <input type="submit" name="submit" value="Submit">
+    </form>
 </body>
 </html>
