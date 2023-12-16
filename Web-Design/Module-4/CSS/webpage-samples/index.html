@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Shraddha E-commerce</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body 
+        {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            box-sizing: border-box;
+        }
+        #shraddha-header
+        {
+            width: 100%;
+            height: auto;
+            margin: 0;
+            padding: 10px;
+            display: inline-block;
+        }
+        .call-us
+        {
+            width: 15%;
+            height: auto;
+            margin: 0;
+            padding: 5px;
+            display: inline-block;
+            color: blue;
+            font-size: 20px;
+        }
+        .search-box
+        {
+            width: 50%;
+            height: auto;
+            margin: 0;
+            padding: 5px;
+            display: inline-block;
+        }
+        .search-box input
+        {
+            color: blue;
+            border: none;
+            border-bottom: solid 2px blue;
+            width: 100%;
+            height: auto;
+            padding: 10px;
+        }
+        .search-box input::placeholder
+        {
+            color: blue;
+            font-size: 17px;
+        }
+        .social-media
+        {
+            width: 30%;
+            height: auto;
+            margin: 0;
+            padding: 5px;
+            display: inline-block;
+            font-size: 20px;
+            color: blue;
+        }
+       #shraddha-navbar
+       {
+            width: 100%;
+            height: 60px;
+            margin: 0;
+            padding: 5px;
+            background-color: lightblue;
+       }
+       .logo
+       {
+            width: 30%;
+            height: auto;
+            margin: 0;
+            padding: 10px;
+            font-size: 20px;
+            color: blue;
+            font-weight: bold;
+            display: inline-block;
+       }
+       .navbar
+       {
+            width: 65%;
+            height: auto;
+            margin: auto;
+            padding: 5px 20px;
+            display: inline-block;
+       }
+       .navbar ul li
+       {
+            display: inline-block;
+            padding: 10px;
+       }
+       .navbar a
+       {
+            font-size: 18px;
+            text-decoration: none;
+            list-style-type: none;
+       }
+       #shraddha-content
+       {
+            width: 90%;
+            height: auto;
+            padding: 20px;
+       }
+       #shraddha-content button
+       {
+            width: 200px;
+            height: auto;
+            padding: 15px;
+            background-color: lightblue;
+            border: none;
+            font-size: 18px;
+            border-radius: 10px;
+            font-weight: bold;
+       }
+       #shraddha-content h1
+       {
+            color: blue;
+            font-size: 25px;
+            border-bottom: 2px solid blue;
+       }
+       .sidebar-content
+        {
+            width: 30%;
+            height: 315px;
+            padding: 25px;
+            border: solid 1px;
+            float: left; 
+            margin-top: 3%;
+        }
+        .sidebar-content ul li
+        {
+            text-decoration: none;
+            padding: 15px 10px;
+            list-style-type: none;
+        }
+        .sidebar-content a
+        {
+            text-decoration: none;
+            list-style-type: none;
+        }
+        .sidebar-content h3
+        {
+            width: 70%;
+            height: auto;
+            margin: auto;
+            background-color: lightblue;
+            border: none;
+            padding: 5px;
+            text-align: center;
+        }
+        .change-password-content
+        {
+            width: 60%;
+            height: auto;
+            margin: 0px;
+            padding: 20px;
+            float: left;
+        }
+        .change-password-content input
+        {
+            width: 450px;
+            height: auto;
+            border: none;
+            padding: 10px;
+            border-bottom: 2px solid blue;
+            outline: none;
+        }   
+        .change-password-content input[type="submit"]
+        {
+            width: 200px;
+            height: auto;
+            border: none;
+            background-color: lightblue;
+            font-size: 20px;
+        }
+        .clearfix 
+        {
+            clear: both !important;
+        }
+        #shraddha-footer 
+        {
+            width: 100%;
+            height: 250px;
+            background-color: lightblue;
+        }
+        .footer1 ul li
+        {
+            padding: 10px 5px;
+            list-style-type: none;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Shraddha header section -->
+    <section id="shraddha-header">
+        <div class="call-us">
+            <span class="fa fa-phone">&nbsp;&nbsp;(+91)91-73357217</span>
+        </div>
+        <div class="search-box">
+            <input type="search" name="search" placeholder="Search here...">
+        </div>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <div class="social-media">
+            <span class="fa fa-facebook"></span>
+            <span class="fa fa-instagram"></span>
+            <span class="fa fa-twitter"></span>
+            <span class="fa fa-snapchat"></span>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <b>Add Account<span class="fa fa-user-circle"></span></b>
+            &nbsp;&nbsp;&nbsp;
+            <span class="fa fa-cart-plus">0</span>
+        </div>
+    </section>
+    <!-- Shraddha navbar section -->
+    <section id="shraddha-navbar">
+        <div class="logo"><span class="fa fa-shopping-bag"></span> Shraddha E-commerce</div>
+        <div class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Men's Products</a></li>
+                <li><a href="#">Women's Products</a></li>
+                <li><a href="#">Kids Products</a></li>
+                <li><a href="#">Offers</a></li>
+                <li><a href="#">Contact Us</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <li><a href="#" style="font-weight: bold; font-size: 20px;">Welcome: Janvi</a></li>
+            </ul>
+        </div>
+    </section>
+    <!-- Shraddha content section -->
+    <section id="shraddha-content">
+        <button type="button">Update Profile <span class="fa fa-users"></span></button>
+        <br><br>
+       
+        <div class="sidebar-content">
+            <h3>Manage Account</h3>
+            <ul>
+                <li><a href="#">Manage Profile</a></li>
+                <li><a href="#">Manage Notifications <span class="fa fa-bell"></span></a></li>
+                <li><a href="#">Manage Orders <span class="fa fa-truck"></span></a></li>
+                <li><a href="#">Change Passsword <span class="fa fa-lock"></span></a></li>
+                <li><a href="#">Delete Account <span class="fa fa-trash"></span></a></li>
+                <li><a href="#">Logout <span class="fa fa-power-off"></span></a></li>
+            </ul>
+        </div>
+        <div class="change-password-content">
+             <h1>Change Password <span class="fa fa-lock"></span></h1> 
+             <br><br>
+            <form method="post">
+                <input type="password" name="old_pass" placeholder="Enter Old Password *">
+                <br><br>
+                <input type="password" name="new_pass" placeholder="Enter New Password *">
+                <br><br>
+                <input type="password" name="confirm_pass" placeholder="Enter Confirmed Password *">
+                <br><br><br>
+                <input type="submit" name="chnage" value="Submit">
+            </form>
+        </div>
+
+    </section>
+    <div class="clearfix"></div>
+    <!-- Shraddha Footer Section -->
+    <section id="shraddha-footer">
+        <div class="footer1">
+            <ul>
+                <li>Contact Us</li>
+                <li>Email</li>
+                <li>Phone</li>
+                <li>Social-media</li>
+                <li>About Us</li>
+            </ul>
+        </div>
+    </section>
+</body>
+</html>
