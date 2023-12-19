@@ -157,7 +157,7 @@
             padding: 5px;
             text-align: center;
         }
-        .change-password-content
+        .update-profile-content
         {
             width: 60%;
             height: auto;
@@ -165,16 +165,16 @@
             padding: 20px;
             float: left;
         }
-        .change-password-content input
+        .update-profile-content input[type="text"]
         {
-            width: 450px;
+            width: 200px;
             height: auto;
             border: none;
             padding: 10px;
             border-bottom: 2px solid blue;
             outline: none;
         }   
-        .change-password-content input[type="submit"]
+        .update-profile-content input[type="submit"]
         {
             width: 200px;
             height: auto;
@@ -239,8 +239,8 @@
     </section>
     <!-- Shraddha content section -->
     <section id="shraddha-content">
-        <a href="update_profile.html"><button type="button">Update Profile <span class="fa fa-users"></span></button></a>
-        <br><br>
+        <!-- <a href="update_profile.html"><button type="button">Update Profile<span class="fa fa-users"></span></button></a>
+        <br><br> -->
        
         <div class="sidebar-content">
             <h3>Manage Account</h3>
@@ -253,17 +253,24 @@
                 <li><a href="#">Logout <span class="fa fa-power-off"></span></a></li>
             </ul>
         </div>
-        <div class="change-password-content">
-             <h1>Change Password <span class="fa fa-lock"></span></h1> 
-             <br><br>
+        <div class="update-profile-content">
+             <h1>Update Profile <span class="fa fa-user"></span></h1> 
+              
             <form method="post">
-                <input type="password" name="old_pass" placeholder="Enter Old Password *">
+                <img src="images/WhatsApp Image 2023-11-26 at 9.22.38 PM.jpeg" width="25%" height="25%" style="border-radius: 50%;">
                 <br><br>
-                <input type="password" name="new_pass" placeholder="Enter New Password *">
+                <input type="file">
                 <br><br>
-                <input type="password" name="confirm_pass" placeholder="Enter Confirmed Password *">
-                <br><br><br>
-                <input type="submit" name="chnage" value="Submit">
+                <input type="text" name="fname" placeholder="Enter your firstname">
+                <input type="text" name="lname" placeholder="Enter your lastname">
+                <br>
+                <input type="email" name="email" placeholder="Enter your email" style="width: 425px; height: auto; border: none; padding: 10px; border-bottom: 2px solid blue; outline: none;">
+                <br>
+                <input type="phone" name="phone" placeholder="Enter your phone no" style="width: 425px; height: auto; border: none; padding: 10px; border-bottom: 2px solid blue; outline: none;">
+                <br><br>
+                <textarea placeholder="Enter message" rows="4" cols="60"></textarea>
+                <br><br>
+                <input type="submit" name="update" value="Update Profile!">
             </form>
         </div>
 

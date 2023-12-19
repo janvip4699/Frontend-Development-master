@@ -8,6 +8,7 @@
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src='main.js'></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <style>
         body 
         {
@@ -157,7 +158,7 @@
             padding: 5px;
             text-align: center;
         }
-        .change-password-content
+        .delete-account-content
         {
             width: 60%;
             height: auto;
@@ -165,16 +166,16 @@
             padding: 20px;
             float: left;
         }
-        .change-password-content input
+        .delete-account-content input[type="text"]
         {
-            width: 450px;
+            width: 200px;
             height: auto;
             border: none;
             padding: 10px;
             border-bottom: 2px solid blue;
             outline: none;
         }   
-        .change-password-content input[type="submit"]
+        .delete-account-content input[type="submit"]
         {
             width: 200px;
             height: auto;
@@ -239,7 +240,7 @@
     </section>
     <!-- Shraddha content section -->
     <section id="shraddha-content">
-        <a href="update_profile.html"><button type="button">Update Profile <span class="fa fa-users"></span></button></a>
+        <a href="update_profile.html"><button type="button">Update Profile<span class="fa fa-users"></span></button></a>
         <br><br>
        
         <div class="sidebar-content">
@@ -253,18 +254,15 @@
                 <li><a href="#">Logout <span class="fa fa-power-off"></span></a></li>
             </ul>
         </div>
-        <div class="change-password-content">
-             <h1>Change Password <span class="fa fa-lock"></span></h1> 
+        <div class="delete-account-content">
+             <h1>Delete Account <span class="fa fa-user"></span></h1> 
              <br><br>
-            <form method="post">
-                <input type="password" name="old_pass" placeholder="Enter Old Password *">
-                <br><br>
-                <input type="password" name="new_pass" placeholder="Enter New Password *">
-                <br><br>
-                <input type="password" name="confirm_pass" placeholder="Enter Confirmed Password *">
-                <br><br><br>
-                <input type="submit" name="chnage" value="Submit">
-            </form>
+             <h2>Are you sure you want to delete your account ?</h2>
+             <br>
+             <button name="yes" value="Yes">Yes</button>
+             <button name="no" value="No">No</button>
+             
+            
         </div>
 
     </section>

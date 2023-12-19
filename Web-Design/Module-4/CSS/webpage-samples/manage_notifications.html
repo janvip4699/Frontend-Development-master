@@ -8,6 +8,7 @@
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src='main.js'></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <style>
         body 
         {
@@ -157,7 +158,7 @@
             padding: 5px;
             text-align: center;
         }
-        .change-password-content
+        .manage-notifications-content
         {
             width: 60%;
             height: auto;
@@ -165,16 +166,16 @@
             padding: 20px;
             float: left;
         }
-        .change-password-content input
+        .manage-notifications-content input[type="text"]
         {
-            width: 450px;
+            width: 200px;
             height: auto;
             border: none;
             padding: 10px;
             border-bottom: 2px solid blue;
             outline: none;
         }   
-        .change-password-content input[type="submit"]
+        .manage-notifications-content input[type="submit"]
         {
             width: 200px;
             height: auto;
@@ -197,6 +198,16 @@
             padding: 10px 5px;
             list-style-type: none;
             font-weight: bold;
+        }
+        .badge 
+        {
+            position: absolute;
+            top: 335px;
+            right: 655px;
+            padding: 5px 10px;
+            border-radius: 50%;
+            background-color: red;
+            color: white;
         }
 
     </style>
@@ -239,7 +250,7 @@
     </section>
     <!-- Shraddha content section -->
     <section id="shraddha-content">
-        <a href="update_profile.html"><button type="button">Update Profile <span class="fa fa-users"></span></button></a>
+        <a href="update_profile.html"><button type="button">Update Profile<span class="fa fa-users"></span></button></a>
         <br><br>
        
         <div class="sidebar-content">
@@ -253,18 +264,14 @@
                 <li><a href="#">Logout <span class="fa fa-power-off"></span></a></li>
             </ul>
         </div>
-        <div class="change-password-content">
-             <h1>Change Password <span class="fa fa-lock"></span></h1> 
+        <div class="manage-notifications-content">
+             <h1>Manage Notifications <span class="fa fa-user"></span><span class="badge">4</span></h1> 
              <br><br>
-            <form method="post">
-                <input type="password" name="old_pass" placeholder="Enter Old Password *">
-                <br><br>
-                <input type="password" name="new_pass" placeholder="Enter New Password *">
-                <br><br>
-                <input type="password" name="confirm_pass" placeholder="Enter Confirmed Password *">
-                <br><br><br>
-                <input type="submit" name="chnage" value="Submit">
-            </form>
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="material-icons" style="font-size:100px;color:blue;background-color: lightblue;">mail</i>
+             <br><br><br>
+             <h3 align="center" style="background-color: lightblue; color: blue; font-size: 30px; width: 45%; height: auto;padding: 15px;">Your Notifications <span style="background-color: black; color: white; padding: 5px; font-size: 22px;">0</span></h3>
+             
+            
         </div>
 
     </section>
