@@ -1,0 +1,153 @@
+.div1
+{
+    background-color: lightblue;
+    width: 80%;
+    height: 800px;
+    margin: auto;
+}
+.p1
+{
+    font-size: 30px;
+    padding-left: 50px;
+    padding-top: 20px;
+    font-family :Arial, Helvetica, sans-serif;
+}
+hr
+{
+    width: 92%;
+    height: auto;
+    margin-left: 50px;
+}
+.div2
+{
+    background-color: white;
+    width: 92%;
+    height: auto;
+    margin: auto;
+    padding: 10px;
+}
+#para
+{
+    padding-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.fa-phone
+{
+    font-size: 50px;
+    color: white;
+    width: 15px;
+    height: 15px;
+    padding: 2px;
+    background-color: rgb(204, 44, 44);
+    border-radius: 20%;
+}
+.phone
+{
+    color: rgb(204, 44, 44);
+}
+.fa-envelope
+{
+    font-size: 50px;
+    color: rgb(70, 162, 199);
+    width: 30px;
+    height: 30px;
+    border-radius: 20%;
+}
+.email
+{
+    color: rgb(70, 162, 199);
+}
+.fa-location-dot
+{
+    font-size: 50px;
+    color: rgb(204, 44, 44);
+    width: 50px;
+    height: 50px;
+}
+.div3
+{
+    background-color: white;
+    width: 92%;
+    height: auto;
+    margin: auto;
+    padding: 10px;
+}
+.div3 input
+{
+    width: 200px;
+    height: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5%;
+    border: solid 1px lightgray;
+}
+.div3 textarea
+{
+    border-radius: 5%;
+    border: solid 1px lightgray;
+}
+.div3 form
+{
+    padding-left: 20px;
+    padding-top: 10px;
+    float: left;
+}
+.div3 input[type="submit"]
+{
+    width: 60px;
+    height: 40px;
+    background-color: rgb(204, 44, 44);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 50px;
+}
+.div3 input::placeholder
+{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+}
+.div3 textarea::placeholder
+{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+}
+iframe
+{
+    padding-top: 10px;
+}
+.fa-facebook 
+{
+    background: #3B5998;
+    color: white;
+    margin-left: 52.5%;
+    width: 10px;
+    height: 10px;
+    padding: 10px;
+}
+.fa-twitter 
+{
+    background: #55ACEE;
+    color: white;
+    width: 10px;
+    height: 10px;
+    padding: 10px;
+}
+.fa-linkedin 
+{
+    background: #007bb5;
+    color: white;
+    width: 10px;
+    height: 10px;
+    padding: 10px;
+}
+.fa-github
+{
+    background: black;
+    color: white;
+    width: 10px;
+    height: 10px;
+    padding: 10px;
+}
