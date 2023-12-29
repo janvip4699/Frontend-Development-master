@@ -18,13 +18,19 @@ hr
     height: auto;
     margin-left: 50px;
 }
-.div2
+#address-section
 {
     background-color: white;
     width: 92%;
     height: auto;
     margin: auto;
     padding: 10px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.add1
+{
+    grid-column: 1/2;
 }
 #para
 {
@@ -40,6 +46,7 @@ hr
     padding: 2px;
     background-color: rgb(204, 44, 44);
     border-radius: 20%;
+    margin-top: 14%;
 }
 .phone
 {
@@ -47,11 +54,12 @@ hr
 }
 .fa-envelope
 {
-    font-size: 50px;
+    font-size: 20px !important;
     color: rgb(70, 162, 199);
     width: 30px;
     height: 30px;
     border-radius: 20%;
+    margin-top: 3%;
 }
 .email
 {
@@ -64,15 +72,21 @@ hr
     width: 50px;
     height: 50px;
 }
-.div3
+#form-section
 {
     background-color: white;
     width: 92%;
     height: auto;
     margin: auto;
     padding: 10px;
+    display: grid;
+    grid-template-columns: auto auto;
 }
-.div3 input
+.frm1
+{
+    grid-column: 1/1;
+}
+.frm1 input
 {
     width: 200px;
     height: 40px;
@@ -80,18 +94,18 @@ hr
     border-radius: 5%;
     border: solid 1px lightgray;
 }
-.div3 textarea
+.frm1 textarea
 {
     border-radius: 5%;
     border: solid 1px lightgray;
 }
-.div3 form
+.frm1 form
 {
     padding-left: 20px;
     padding-top: 10px;
     float: left;
 }
-.div3 input[type="submit"]
+.frm1 input[type="submit"]
 {
     width: 60px;
     height: 40px;
@@ -102,19 +116,19 @@ hr
     font-size: 15px;
     font-weight: 50px;
 }
-.div3 input::placeholder
+.frm1 input::placeholder
 {
     font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
     padding: 10px;
 }
-.div3 textarea::placeholder
+.frm1 textarea::placeholder
 {
     font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
     padding: 10px;
 }
-iframe
+.frm2 iframe
 {
     padding-top: 10px;
 }
@@ -122,7 +136,6 @@ iframe
 {
     background: #3B5998;
     color: white;
-    margin-left: 52.5%;
     width: 10px;
     height: 10px;
     padding: 10px;
