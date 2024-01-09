@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Lilita+One&display=swap" rel="stylesheet">
+    <script src='https://code.jquery.com/jquery-3.7.1.min.js'></script>
+    <script src="js/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/slideshow.js" type="text/javascript" charset="utf-8"></script>
+    <script src='main.js'></script>
+    <script>
+        $(document).ready(function(){
+            var slideSpeed=600;
+            var autoSlide=true;
+            var autoSlideTimer = 5000;
+            var loadRandom = true;
+            $("#slider").slide();
+        });
+    </script>
+    
+</head>
+<body>
+    <!-- Header section -->
+    <section id="header">
+        <div class="temp">
+            <p>This is an educational <span>HTML CSS</span> template by templates</p>
+        </div>
+        <div class="social-media-icons">
+            <i class="fa fa-facebook-f"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+            <i class="fa fa-twitter"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+            <i class="fa fa-instagram"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+            <i class="fa fa-linkedin"></i>
+        </div>
+    </section>
+
+    <!-- Navbar section -->
+    <section id="navbar">
+        <div class="title">
+            <h1>EDU MEETING</h1>
+        </div>
+        <div class="navlist">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">MEETINGS</a></li>
+                <li><a href="#">APPLY NOW</a></li>
+                <li class="dropdown"><a href="#">PAGES</a>
+                <i class="fa fa-caret-down"></i>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Upcoming Meetings</a></li>
+                        <li><a href="#">Apply Now</a></li>
+                        <li><a href="#">Popular Courses</a></li>
+                        <li><a href="#">Our University</a></li>
+                        <li></li>
+                    </ul>
+                </li>
+                <li><a href="#">COURSES</a></li>
+                <li><a href="#">CONTACT US</a></li>
+            </ul>
+        </div>
+        <div class="front-img">
+            <!-- <p>HELLO STUDENTS</p>
+            <h1>WELCOME TO EDUCATION</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod accusantium fugit aspernatur neque minus perspiciatis vero, qui assumenda inventore, numquam accusamus laudantium ipsum omnis a nostrum, fuga quos libero.</p>
+            <button type="submit">JOIN US NOW!</button> -->
+        </div>
+    </section>
+
+    <!-- Slider section -->
+    <section id="slider" class="box">
+        <div class="slide" id="box1">
+            <h3>Best Education</h3>
+            <p>Lorem ipsum dolor sit amet consectetur
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing</p>
+            <p>Lorem ipsum dolor sit</p>
+        </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <div class="slide" id="box2">
+            <h3>Best Teachers</h3>
+            <p>Lorem ipsum dolor sit amet consectetur
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing</p>
+            <p>Lorem ipsum dolor sit</p>
+        </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <div class="slide" id="box3">
+            <h3>Best Students</h3>
+            <p>Lorem ipsum dolor sit amet consectetur
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing</p>
+            <p>Lorem ipsum dolor sit</p>
+        </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <div class="arrows prev"></div>
+        <div class="arrows next"></div>
+    </section>
+
+    <!-- Content section -->
+    <section id="content">
+        <div class="upcoming-meetings">
+            <h1>UPCOMING MEETINGS</h1>
+            <hr> 
+
+            <div class="leftside">
+                <h4>Meeting Categories</h4>
+                <ul>
+                    <li>Meeting category one</li>
+                    <li>Meeting category two</li>
+                    <li>Meeting category three</li>
+                    <li>Meeting category foue</li>
+                    <li>Meeting category five</li>
+                </ul>
+                <br>
+                <button>ALL UPCOMING MEETINGS</button>
+            </div>
+
+            <div class="rightside">
+
+                <div class="box1">
+                    <img src="images/box1.jpg" width="378px" height="150px">
+                    <p class="dollar">$22.00</p>
+                    <p class="pstyle">NOV &nbsp;&nbsp;&nbsp; <span class="spanstyle">New Lectures Meeting</span></p>
+                    <p class="pstyle">&nbsp; <span class="spanstyle">10</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lorem ipsum dolor, sit amet</p>
+                    <p class="pstyle">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lorem ipsum dolor</p>   
+                </div>
+
+                <div class="box2">
+                    <img src="images/box2.jpg" width="378px" height="150px">
+                    <p class="dollar">$36.00</p>
+                    <p class="pstyle">NOV &nbsp;&nbsp;&nbsp; <span class="spanstyle">Online Teaching Techniques</span></p>
+                    <p class="pstyle">&nbsp; <span class="spanstyle">24</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lorem ipsum dolor, sit amet</p>
+                    <p class="pstyle">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lorem ipsum dolor</p>
+                </div>
+
+                <div class="box3">
+                    <img src="images/box3.jpg" width="378px" height="150px">
+                    <p class="dollar">$14.00</p>
+                    <p class="pstyle">NOV &nbsp;&nbsp;&nbsp; <span class="spanstyle">Higher Education Conference</span></p>
+                    <p class="pstyle">&nbsp; <span class="spanstyle">26</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lorem ipsum dolor, sit amet</p>
+                    <p class="pstyle">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lorem ipsum dolor</p>
+                </div>
+
+                <div class="box4">
+                    <img src="images/box4.jpg" width="378px" height="150px">
+                    <p class="dollar">$48.00</p>
+                    <p class="pstyle">NOV &nbsp;&nbsp;&nbsp; <span class="spanstyle">Student Training Meetup</span></p>
+                    <p class="pstyle">&nbsp; <span class="spanstyle">30</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lorem ipsum dolor, sit amet</p>
+                    <p class="pstyle">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lorem ipsum dolor</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="apply-now">
+        <div class="leftapply">
+            <div class="leftapply1">
+                <h3 class="applyfonts">APPLY FOR BACHELOR DEGREE</h3>
+                <p class="applyfonts">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio itaque ipsam repellat autem, dolorem amet consequatur deleniti</p><br>
+                <button class="applyfonts applybutton">JOIN US NOW!</button>
+            </div>
+
+            <div class="leftapply2">
+                <h3 class="applyfonts">APPLY FOR BACHELOR DEGREE</h3>
+                <p class="applyfonts">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio itaque ipsam repellat autem</p><br>
+                <button class="applyfonts applybutton">JOIN US NOW!</button>
+            </div>
+        </div>
+            <div class="rightapply">
+                <h3 class="pstyle">About Edu Meeting HTML Template</h3>
+            </div>
+        </div>
+
+        <div class="popular-courses">
+            <h1>OUR POPULAR COURSES</h1>
+            <hr> 
+
+            <div class="course1 course">
+                <h3 class="coursetitle">Please visit our <br> Website again</h3>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <p class="coursedollar">$380</p>
+            </div>
+            
+            <div class="course2 course">
+                <h3 class="coursetitle">Responsive HTML <br> Templates for you</h3>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <p class="coursedollar">$400</p>
+            </div>
+
+            <div class="course3">
+                <h3 class="coursetitle">Download Free CSS <br> Layouts for your <br> business</h3>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <p class="coursedollar">$430</p>
+            </div>
+
+            <div class="course4 course">
+                <h3 class="coursetitle">Marbi in libero blandit <br> lectus cursus</h3>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <p class="coursedollar">$480</p>
+            </div>
+            
+            <div class="arrows prev"></div>
+            <div class="arrows next"></div>
+
+        </div>
+
+        <div class="our-univercity">
+            <div class="univ1">
+                <h1>A Few Facts About Our <br>University</h1>
+                <h1 id="per1"><span class="percolor">94%</span><br> Succesed Students</h1>
+                <h1 id="per2"><span class="percolor">2345</span><br> New Students</h1>
+                <h1 id="per3"><span class="percolor">126</span><br> Current Teachers</h1>
+                <h1 id="per4"><span class="percolor">32</span><br> Awards</h1>
+            </div>
+            <div class="univ2">
+                <iframe width="500" height="315" src="https://www.youtube.com/embed/uAZ6NnHLo7o?si=Grvu-5WIfXeI5KN1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer section -->
+    <section id="footer">
+        <div class="footer1">
+            <h1>LET'S GET IN TOUCH</h1>
+            <hr><br>
+            <form>
+                <input type="text" name="name" placeholder="YOUR NAME...*">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="email" name="email" placeholder="YOUR EMAIL...">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="text" name="sub" placeholder="SUBJECT...*"><br><br>
+                <textarea name="msg" placeholder="YOUR MESSAGE..." rows="5" cols="81"></textarea><br><br>
+                <button name="send" type="submit">SEND MESSAGE NOW</button>
+            </form>
+        </div>
+
+        <div class="footer2">
+            <h4>Phone Number</h4>
+            <h4>010-020-0340</h4>
+            <hr>
+            <h4>Email Address</h4>
+            <h4>info@meeting.edu</h4>
+            <hr>
+            <h4>Street Address</h4>
+            <h4>Rio de Janeino-RJ.</h4>
+            <h4>22795-008, Brazil</h4>
+            <hr>
+            <h4>Website URL</h4>
+            <h4>WWW.meeting.edu</h4>
+        </div>
+    </section>
+</body>
+</html>

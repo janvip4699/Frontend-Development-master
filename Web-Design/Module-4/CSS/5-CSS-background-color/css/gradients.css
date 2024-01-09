@@ -1,0 +1,43 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background: blue;
+
+    /* background: -webkit-linear-gradient(to left,red,black);
+    background: -moz-linear-gradient(to left,red,black);
+    background: -o-linear-gradient(to left,red,black);
+    background: linear-gradient(to right,red,black); */
+
+    /* background: -webkit-linear-gradient(to top,red,black);
+    background: -moz-linear-gradient(to top,red,black);
+    background: -o-linear-gradient(to top,red,black);
+    background: linear-gradient(to bottom,red,black); */
+
+    /* background: -webkit-linear-gradient(red,black);
+    background: -moz-linear-gradient(red,black);
+    background: -o-linear-gradient(red,black);
+    background: linear-gradient(red,black); */
+
+    /* background: -webkit-linear-gradient(to left,red 50%,black 50%);
+    background: -moz-linear-gradient(to left,red 50%,black 50%);
+    background: -o-linear-gradient(to left,red 50%,black 50%);
+    background: linear-gradient(to right,red 50%,black 50%); */
+
+    background: -webkit radial-gradient(lightblue,blue);
+    background: -moz-radial-gradient(lightblue,blue);
+    background: -o-radial-gradient(lightblue,blue);
+    background: radial-gradient(lightblue,blue);
+}
+.content
+{
+    width: 70%;
+    height: auto;
+    margin: auto;
+    padding: 25px;
+    background-color: rgba(0,0,100,1);
+    color: white;
+    margin-top: 20%;
+}
