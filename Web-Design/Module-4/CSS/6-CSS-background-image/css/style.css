@@ -474,12 +474,20 @@ body
 {
     width: 100%;
     height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+.uniimag{
     background: url('../images/university.jpg');
+    width: 100%;
+    height: 600px;
     background-size: cover;
     filter: brightness(25%);
     background-attachment: fixed;
-    display: flex;
-    flex-wrap: wrap;
+    position: absolute;
+   z-index: -1;
+
 }
 .univ1
 {
