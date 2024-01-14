@@ -8,6 +8,7 @@ body
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    position: relative;
 }
 /* Header section */
 #header
@@ -49,9 +50,9 @@ body
     height: auto;
     margin: 0;
     padding: 10px;
-    opacity: 0.9;
-    filter: brightness(50%);
     background-color: whitesmoke;
+    opacity: 0.5;
+    
 }
 .dropdown 
 {
@@ -100,15 +101,19 @@ body
     background-image: url('../images/front.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 450px;
+    height: 600px;
+    width: 100%;
+    filter: brightness(20%);
+    position: relative;
 }
 #slider
 {
     width: 90%;
     height: 400px;
     margin: auto;
-    margin-left: 5.5%;
-    margin-top: 5%;
+    margin-left: 5.7%;
+    margin-top: -10%;
+    position: absolute;
 }
 .slide
 {
@@ -140,6 +145,7 @@ body
     height: 700px;
     background-size: cover;
     padding: 10px;
+    margin-top: 15%;
 }
 .upcoming-meetings h1
 {
@@ -265,11 +271,12 @@ body
     height: 600px;
     background: url('../images/apply.jpg');
     background-size: cover;
-    filter: brightness(50%);
+    /* filter: brightness(20%); */
     background-attachment: fixed;
     display: flex;
     flex-wrap: wrap;
-    margin-top: 5%;
+    margin-top: 3%;
+    position: relative;
 }
 .leftapply
 {
@@ -281,6 +288,7 @@ body
     height: 400px;
     margin-top: 6%;
     margin-left: 10%;
+    
 }
 .leftapply1
 {
@@ -289,7 +297,6 @@ body
     margin: 0;
     padding: 20px;
     background-color: whitesmoke;
-    opacity: 0.4;
 }
 .leftapply2
 {
@@ -297,7 +304,6 @@ body
     height: 150px;
     margin: 0;
     background-color: whitesmoke;
-    opacity: 0.4;
     padding: 20px;
     margin-top: 5%;
 }
@@ -477,27 +483,29 @@ body
     display: flex;
     flex-wrap: wrap;
     position: relative;
+    filter: brightness(20%);
 }
-.uniimag{
+.univimg
+{
     background: url('../images/university.jpg');
     width: 100%;
     height: 600px;
     background-size: cover;
-    filter: brightness(25%);
     background-attachment: fixed;
     position: absolute;
-   z-index: -1;
-
+    background-color: rgba(5, 0, 0, 0.8);
 }
 .univ1
 {
     flex: 1 1 200px;
     height: 100px;
+    position: absolute;
 }
 .univ2
 {
     flex: 1 1 200px;
     height: 100px;
+    position: absolute;
 }
 .univ1 h1
 {
@@ -505,7 +513,8 @@ body
     font-size: 40px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-left: 20%;
-    margin-top: 10%;
+    margin-top: 15%;
+    width: 100%;
 }
 #per1
 {
@@ -516,7 +525,7 @@ body
     background-color: whitesmoke;
     opacity: 0.4;
     text-align: center;
-    width: 35%;
+    width: 45%;
     height: 90px;
     color: black;
     padding: 15px;
@@ -525,13 +534,13 @@ body
 #per2
 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin-left: 65%;
-    margin-top: -16%;
+    margin-left: 80%;
+    margin-top: -17%;
     font-size: 20px;
     background-color: whitesmoke;
     opacity: 0.4;
     text-align: center;
-    width: 35%;
+    width: 45%;
     height: 90px;
     color: black;
     padding: 15px;
@@ -541,12 +550,12 @@ body
 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-left: 20%;
-    margin-top: -4%;
+    margin-top: -10%;
     font-size: 20px;
     background-color: whitesmoke;
     opacity: 0.4;
     text-align: center;
-    width: 35%;
+    width: 45%;
     height: 90px;
     color: black;
     padding: 15px;
@@ -555,13 +564,13 @@ body
 #per4
 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin-left: 65%;
+    margin-left: 80%;
     margin-top: -16%;
     font-size: 20px;
     background-color: whitesmoke;
     opacity: 0.4;
     text-align: center;
-    width: 35%;
+    width: 45%;
     height: 90px;
     color: black;
     padding: 15px;
@@ -575,11 +584,15 @@ body
 .univ2
 {
     margin-top: 10%;
-    margin-left: 10%;
+    margin-left: 55%;
 }
 .univ2 iframe
 {
     border-radius: 5%;
+}
+.clearfix
+{
+    clear: both;
 }
 #footer
 {
@@ -588,12 +601,14 @@ body
     background-image: url('../images/back.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    filter: brightness(10%);
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
+    position: relative;
+    filter: brightness(20%);
 }
 .footer1
 {
+    width: 53%;
     flex: 1 1 550px;
     height: 350px;
     background-color: white;
@@ -602,6 +617,7 @@ body
     padding: 20px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     border-radius: 20px;
+    position: absolute;
 }
 .footer1 input
 {
@@ -643,15 +659,16 @@ body
 }
 .footer2
 {
+    width: 25%;
     flex: 1 1 100px;
     height: 450px;
     background-color: #a11616;
-    margin-left: 3%;
+    margin-left: 65%;
     margin-top: 6%;
-    margin-right: 7%;
     padding: 20px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     border-radius: 20px;
+    position: absolute;
 }
 .footer2 h4
 {
