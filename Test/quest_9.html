@@ -15,6 +15,7 @@
             box-sizing: border-box;
             overflow-x: hidden;
             background-color: lightgray;
+            color: white;
         }
         .box1
         {
@@ -29,6 +30,10 @@
             width: 250px;
             height: 250px;
             margin: 50px;
+            position: absolute;
+            z-index: 2;
+            margin-top: -18%;
+            margin-left: 8%;
         }
         .box3
         {
@@ -36,15 +41,19 @@
             width: 250px;
             height: 250px;
             margin: 50px;
+            position: absolute;
+            z-index: 3;
+            margin-top: -13%;
+            margin-left: 13%;
         }
     </style>
 </head>
 <body>
     <!-- Define z-index ? create examples as look like this examples using z-index. -->
-    <!-- z-index is the property od css that overlaps the elements -->
+    <!-- z-index is the property of css that overlaps the elements -->
 
-    <div class="box1"></div>
-    <div class="box2"></div>
-    <div class="box3"></div>
+    <div class="box1">Box-1</div>
+    <div class="box2">Box-2</div>
+    <div class="box3">Box-3</div>
 </body>
 </html>
