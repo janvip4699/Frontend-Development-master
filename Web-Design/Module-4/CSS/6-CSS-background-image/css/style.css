@@ -601,9 +601,15 @@ body
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     position: relative;
-    filter: brightness(20%);
+}
+.footerback
+{
+    width: 100%;
+    height: 650px;
+    position: absolute;
+    background-color: rgba(5, 0, 0, 0.7);
 }
 .footer1
 {
@@ -617,6 +623,7 @@ body
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     border-radius: 20px;
     position: absolute;
+    
 }
 .footer1 input
 {
