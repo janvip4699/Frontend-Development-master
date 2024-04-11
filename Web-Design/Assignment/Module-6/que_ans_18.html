@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        .pass_box
+        {
+            width: 30%;
+            height: auto;
+            margin: auto;
+            padding: 20px;
+            background-color: aquamarine;
+            margin-top: 15%;
+        }
+        .pass_box label
+        {
+            font-size: 20px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .pass_box input
+        {
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5%;
+        }
+        .pass_box h1
+        {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="pass_box">
+        <h1>Password hide & show functionality</h1>
+        <label>Enter Password :</label>
+        <input type="password" id="pass">
+        <br>
+        <input type="checkbox" onclick="showHide()">
+        <label>Show password</label>
+    </div>
+    <script>
+        function showHide()
+        {
+            var pass = document.getElementById("pass");
+
+            if(pass.type == "password")
+            {
+                pass.type = "text";
+            }
+            else
+            {
+                pass.type = "password";
+            }           
+        }
+    </script>
+</body>
+</html>

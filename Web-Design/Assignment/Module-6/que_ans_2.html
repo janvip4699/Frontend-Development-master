@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <h1>2. What is the use of isNaN function?</h1>
+    <p>In Javascript, Nan is short for Not-a-Number. The isNaN() function returns true is the value is Nan, and the type is number. isNaN() converts the value to a number before testing it.</p>
+    <p id="check"></p>
+    <script>
+        let value="Janvi"; //It returns true because value is Not-a-Number.
+        // let value= 4699; It returns false beacuse value is a number.
+        document.getElementById("check").innerHTML=isNaN(value);
+    </script>
+</body>
+</html>

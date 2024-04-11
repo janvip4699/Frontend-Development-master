@@ -1,0 +1,10 @@
+var a=10;
+var b=20;
+var add=a+b;
+var sub=a-b;
+var mult=a*b;
+var div=a/b;
+console.log("Addition of a and b is", add);
+console.log("Subtraction of a and b is", sub);
+console.log("Multiplication of a and b is", mult);
+console.log("Division of a and b is", div);

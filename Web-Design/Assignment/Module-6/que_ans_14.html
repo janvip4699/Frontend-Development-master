@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <h1>14. What are all the types of Pop up boxes available in JavaScript?</h1>
+    <hr>
+    <p>Javascript has three kinds of popup boxes: Alert box, Confirm box & Prompt box.</p>
+    <h3>Alert Box</h3>
+    <p>It is often used if you want to make sure information comes through to the user. When it pops up, the user will have to click "OK" to proceed.</p>
+    <p>syntax : window.alert("text");</p>
+    <button onclick="alertPopup()">Click here to see alert box</button>
+    <script>
+        function alertPopup()
+        {
+            alert("Hello from alert box!!")
+        }
+    </script>
+    <br>
+    <h3>Confirm Box</h3>
+    <p>It is often used if you want the user to verify or accept something. When it pops up, the user will have to click either "OK" or "Cancel" to proceed. If the user clicks "OK", the box returns true & if "cancel" then it will return false.</p>
+    <p>syntax : window.confirm("text");</p>
+    <button onclick="confirmPopup()">Click here to see confirm box</button>
+    <p id="demo"></p>
+    <script>
+        function confirmPopup()
+        {
+            var txt;
+            if (confirm("Are you sure to logout!")) {
+                txt = "Successful!";
+            } else {
+                txt = "Unsuccessful!";
+            }
+            document.getElementById("demo").innerHTML = txt;
+        }
+    </script>
+    <h3>Prompt Box</h3>
+    <p>It is often used if you want the user to input a value before entering a page. when it pops up, the user will have to click either "OK" or "Cancel" to proceed after entering an input value. If the user clicks "OK", the box returns the input value & if "cancel" , it returns null.</p>
+    <p>syntax : window.prompt("text", "default");</p>
+    <button onclick="propmtPopup()">Click here to see prompt box</button>
+    <p id="demo1"></p>
+    <script>
+        function propmtPopup()
+        {
+            let txt;
+            let person = prompt("Please enter your name:", "Janvi Parmar");
+            if (person == null || person == "") {
+                txt = "No value entered!";
+            } else {
+                txt = "Hello " + person + "!";
+            }
+            document.getElementById("demo1").innerHTML = txt;
+        }
+    </script>
+    <br>
+</body>
+</html>

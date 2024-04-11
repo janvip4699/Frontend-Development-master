@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='https://code.jquery.com/jquery-3.7.1.min.js'></script>
+    <script>
+       $(document).ready(function(){
+       
+        $("#anim").css({"width":"250px","height":"200px","background-color":"red","position":"absolute"});
+
+        // $("button").click(function(){
+        //     $("#anim").animate({
+        //         left:'125px',
+        //         top:'400px'
+        //     })
+
+        // })
+
+        $("button").click(function(){
+            
+        var div=$("div");
+        div.animate({height:"300px",opacity:"0.5"},"slow");
+        div.animate({width:"300px",opacity:"0.5"},"slow");
+        div.animate({height:"100px",opacity:"0.5"},"slow");
+        div.animate({width:"100px",opacity:"0.5"},"slow");
+
+    });
+})
+    </script>
+</head>
+<body>
+    <div id="anim"></div>
+    <br><br>
+    <button type="button" style="margin-top: 20%;">click here to see animation >></button>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='https://code.jquery.com/jquery-3.7.1.min.js'></script>
+    <script>
+        $(document).ready(function(){
+        //  $("span").parent().css({"border":"solid 2px red"});   
+        $("span").parents().css({"border":"solid 2px red"});   
+        });
+    </script>
+    <style>
+        .assesor * 
+        {
+            width: auto;
+            height: auto;
+            margin: 15px;
+            padding: 8px;
+            display: block;
+            border: solid 2px lightgray;
+            color: gray;
+        }
+    </style>
+</head>
+<body class="assesor">
+<!-- this is a great grand father -->
+This is a Great grand father
+<div class="parent">
+    This is a grand father
+    <!-- grand father -->
+    <ul class="father">
+        This is a Father
+        <li>
+            <span>Child</span>
+        </li>
+    </ul>
+</div>   
+</body>
+</html>

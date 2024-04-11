@@ -1,0 +1,441 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+#navbar
+{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    background-color: whitesmoke;
+}
+.logo
+{
+    width: 20%;
+    height: auto;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 25px;
+    margin-left: 10%;
+}
+.menu
+{
+    width: 60%;
+    height: auto;
+    padding: 10px;
+}
+.menu ul li
+{
+    list-style-type: none;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 25px;
+}
+.menu ul li button
+{
+    border: none;
+    border-radius: 5%;
+    background-color: chocolate;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    padding: 10px;
+    margin-left: 100%;
+}
+#slider
+{
+    width: 100%;
+    height: 350px;
+    padding: 10px;
+    background-color: lightblue;
+}
+.banner h1
+{
+    text-align: center;
+    font-weight: bold;
+    font-size: 80px;
+    margin-top: 10%;
+    color: white;
+}
+#content
+{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+}
+.box
+{
+    width: 20%;
+    height: auto;
+    background-color: gray;
+    padding: 20px;
+    margin: 65px;
+}
+.box p
+{
+    font-size: 17px;
+    text-align: justify;
+}
+
+/* apply media query for mobile breakpoints */
+@media only screen and (min-width:320px) and (max-width:480px)
+{
+    body 
+    {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        box-sizing: border-box;
+    }
+    #navbar
+    {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        background-color: whitesmoke;
+    }
+    .logo
+    {
+        width: 10%;
+        height: auto;
+        padding: 10px;
+        font-weight: bold;
+        font-size: 10px;
+        margin-left: 5%;
+    }
+    .menu
+    {
+        width: 80%;
+        height: auto;
+        padding: 2px;
+    }
+    .menu ul li
+    {
+        list-style-type: none;
+        display: inline-block;
+        font-size: 10px;
+        font-weight: bold;
+        padding: 3px;
+    }
+    .menu ul li button
+    {
+        border: none;
+        border-radius: 5%;
+        background-color: chocolate;
+        font-size: 10px;
+        font-weight: bold;
+        color: white;
+        padding: 3px;
+    }
+    #slider
+    {
+        width: 100%;
+        height: 300px;
+        padding: 5px;
+        background-color: lightblue;
+    }
+    .banner h1
+    {
+        text-align: center;
+        font-weight: bold;
+        font-size: 40px;
+        margin-top: 30%;
+        color: white;
+    }
+    #content
+    {
+        width: 100%;
+        height: auto;
+        padding: 0;
+        display: block;
+    }
+    .box
+    {
+        width: 50%;
+        height: 200px;
+        background-color: gray;
+        padding: 20px;
+    }
+    .box p
+    {
+        font-size: 15px;
+        text-align: justify;
+    }
+
+}
+
+/* apply media query for tab breakpoints */
+@media only screen and (min-width:481px) and (max-width:767px)
+{
+    body 
+    {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        box-sizing: border-box;
+    }
+    #navbar
+    {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        background-color: whitesmoke;
+    }
+    .logo
+    {
+        width: 30%;
+        height: auto;
+        padding: 5px;
+        font-weight: bold;
+        font-size: 20px;
+        margin-left: 5%;
+    }
+    .menu
+    {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+    .menu ul li
+    {
+        list-style-type: none;
+        display: inline-block;
+        font-size: 15px;
+        font-weight: bold;
+        padding: 3px;
+    }
+    .menu ul li button
+    {
+        border: none;
+        border-radius: 5%;
+        background-color: chocolate;
+        font-size: 15px;
+        font-weight: bold;
+        color: white;
+        padding: 3px;
+    }
+    #slider
+    {
+        width: 100%;
+        height: 300px;
+        padding: 10px;
+        background-color: lightblue;
+    }
+    .banner h1
+    {
+        text-align: center;
+        font-weight: bold;
+        font-size: 60px;
+        margin-top: 15%;
+        color: white;
+    }
+    #content
+    {
+        width: 100%;
+        height: auto;
+        padding: 5px;
+        display: inline-block;
+        /* flex-direction: row; */
+    }
+    .box
+    {
+        width: 40%;
+        height: 200px;
+        background-color: gray;
+        padding: 5px;
+        margin: 20px;
+    }
+    .box p
+    {
+        font-size: 15px;
+        text-align: justify;
+    }
+    }
+
+    /* apply media query for laptop breakpoints */
+    @media only screen and (min-width:768px) and (max-width:1024px)
+    {
+        body 
+        {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            box-sizing: border-box;
+        }
+        #navbar
+        {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: row;
+            background-color: whitesmoke;
+        }
+        .logo
+        {
+            width: 30%;
+            height: auto;
+            padding: 5px;
+            font-weight: bold;
+            font-size: 20px;
+            margin-left: 10%;
+        }
+        .menu
+        {
+            width: 70%;
+            height: auto;
+            padding: 5px;
+        }
+        .menu ul li
+        {
+            list-style-type: none;
+            display: inline-block;
+            font-size: 17px;
+            font-weight: bold;
+            padding: 10px;
+        }
+        .menu ul li button
+        {
+            border: none;
+            border-radius: 5%;
+            background-color: chocolate;
+            font-size: 17px;
+            font-weight: bold;
+            color: white;
+            padding: 10px;
+            margin-left: 100%;
+        }
+        #slider
+        {
+            width: 100%;
+            height: 350px;
+            padding: 10px;
+            background-color: lightblue;
+        }
+        .banner h1
+        {
+            text-align: center;
+            font-weight: bold;
+            font-size: 90px;
+            margin-top: 10%;
+            color: white;
+        }
+        #content
+        {
+            width: 100%;
+            height: auto;
+            padding: 3px;
+            display: flex;
+            flex-direction: row;
+        }
+        .box
+        {
+            width: 30%;
+            height: auto;
+            background-color: gray;
+            padding: 5px;
+        }
+        .box p
+        {
+            font-size: 17px;
+            text-align: justify;
+        }
+    }
+
+    /* apply media query for deskstop breakpoints */
+    @media only screen and (min-width:1025px) and (max-width:1420px)
+    {
+        body 
+        {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            box-sizing: border-box;
+        }
+        #navbar
+        {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: row;
+            background-color: whitesmoke;
+        }
+        .logo
+        {
+            width: 20%;
+            height: auto;
+            padding: 10px;
+            font-weight: bold;
+            font-size: 25px;
+            margin-left: 10%;
+        }
+        .menu
+        {
+            width: 60%;
+            height: auto;
+            padding: 10px;
+        }
+        .menu ul li
+        {
+            list-style-type: none;
+            display: inline-block;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 25px;
+        }
+        .menu ul li button
+        {
+            border: none;
+            border-radius: 5%;
+            background-color: chocolate;
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+            padding: 10px;
+            margin-left: 100%;
+        }
+        #slider
+        {
+            width: 100%;
+            height: 350px;
+            padding: 10px;
+            background-color: lightblue;
+        }
+        .banner h1
+        {
+            text-align: center;
+            font-weight: bold;
+            font-size: 80px;
+            margin-top: 10%;
+            color: white;
+        }
+        #content
+        {
+            width: 100%;
+            height: auto;
+            padding: 10px;
+            display: flex;
+            flex-direction: row;
+        }
+        .box
+        {
+            width: 20%;
+            height: auto;
+            background-color: gray;
+            padding: 20px;
+            margin: 65px;
+        }
+        .box p
+        {
+            font-size: 17px;
+            text-align: justify;
+        }
+}

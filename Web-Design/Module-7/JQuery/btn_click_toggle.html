@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<title>Page Title</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+<script src='https://code.jquery.com/jquery-3.7.1.min.js'></script>
+<script>
+$(document).ready(function(){
+// provides style
+$(".header").css({"width":"100%","height":"50px","background-color":"white","padding":"20px","box-shadow":"1px 2px 2px gray"});
+
+$("#log").css({"width":"30%","height":"auto","margin":"auto","background-color":"white","padding":"20px","box-shadow":"1px 1px 1px 1px gray","display":"none","margin-top":"5%"});
+
+$("#btn1").css({"width":"20%","height":"auto","background-color":"white","padding":"8px","border":"solid 1px","color":"black","float":"right"});
+
+$("#btn-hide").css({"width":"20%","height":"auto","background-color":"white","padding":"8px","color":"red","float":"right","border":"none","font-size":"30px"});
+
+$("#btn1").click(function(){
+
+$("#log").toggle(2000);
+
+})
+
+
+$("#btn-hide").click(function(){
+
+$("#log").hide(2000);
+
+})
+
+})
+</script>
+</head>
+<body>
+<div class="header">
+<button type="button" id="btn1">Login here</button>
+</div>
+
+<div id="log">
+<button type="button" id="btn-hide">&times;</button>
+<input type="text" placeholder="email *">
+<br><br>
+<input type="password" placeholder="Password *">
+<br><br>
+<input type="submit" value="Login" placeholder="email *">
+<br><br>
+</div>
+</body>
+</html>

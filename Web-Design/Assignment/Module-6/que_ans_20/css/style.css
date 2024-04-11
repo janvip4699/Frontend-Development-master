@@ -1,0 +1,79 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+#marksheet
+{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding: auto;
+}
+.main
+{
+    width: 50%;
+    height: 100%;
+    border: solid 1px;
+    margin: 5%;
+    padding: 20px;
+    
+}
+.content
+{
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+}
+.content h1
+{
+    text-align: center;
+}
+.content label
+{
+    font-size: 25px;
+    margin:auto;
+    margin-top: 5px;
+}
+.conts
+{
+    display: flex;
+    flex-direction: row;
+}
+.cont2
+{
+    width:100%;
+    height: auto;
+}
+.cont2 input
+{
+    width: 50%;
+    margin:auto;
+    margin-top: 5px;
+    margin-left: 50px;
+    border-radius: 5%;
+    padding: 5px;
+}
+.cont2 button
+{
+    width: 20%;
+    border-radius: 5%;
+    padding: 15px;
+    font-size: 20px;
+}
+.marks
+{
+    font-size: 25px;
+    margin-left: 40%;
+}
+.answers
+{
+    font-size: 25px;
+    margin: auto;
+}
+.answers label
+{
+    margin: auto;
+}

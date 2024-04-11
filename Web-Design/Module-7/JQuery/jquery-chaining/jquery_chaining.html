@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='https://code.jquery.com/jquery-3.7.1.min.js'></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                // $("#demo").hide("slow").slideDown("slow").slideUp();
+                $("#demo").hide("slow").slideToggle();
+            })
+        })
+    </script>
+</head>
+<body>
+    <p id="demo">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, earum repudiandae aliquam quos dicta assumenda. Aliquam numquam eos quia a, porro consectetur, modi beatae quas error officia exercitationem maxime cupiditate?</p>
+    <button type="button">Click Me</button>
+    
+</body>
+</html>
