@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Header section -->
+    <section id="header">
+        <div class="container-fluid shadow p-4">
+            <div class="row">
+                <!-- App logo -->
+                <div class="col-md-2">
+                    <h1 class="fs-4 text-info">Flipkart <span class="text-danger">A</span>pp</h1>
+                </div>
+                <!-- Search bar -->
+                <div class="col-md-7">
+                    <div class="input-group">
+                        <input type="search" name="search" placeholder="Search here..." class="form-control">
+                        <button type="button" class="btn btn-info text-white border"><span class="bi bi-search"></span></button>
+                    </div>
+                </div>
+                <!-- Social media icons -->
+                <div class="col-md-3">
+                    <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#signup">Create Account <span class="bi bi-person"></span></button>
+                    <span class="bi bi-facebook text-primary ms-3 fs-4"></span>
+                    <span class="bi bi-instagram text-primary fs-4 ms-2"></span>
+                    <span class="bi bi-twitter text-primary fs-4 ms-2"></span>
+                    <span class="bi bi-telegram text-primary fs-4 ms-1"></span> 
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- navbar starting here -->
+    <nav class="nav navbar navbar-expand-md bg-info p-2">
+        <!-- information -->
+        <a href="" class="navbar-brand ms-5 text-white ">50% off on Selected Items</a>
+        <!-- toggler button -->
+        <button type="button" class="navbar-toggler border border-0" data-bs-toggle="collapse" data-bs-target="#btn-coll">
+            <span class="bi bi-grid-3x2-gap-fill text-white p-3 fs-1"></span>
+        </button>
+        <!-- navbar menu -->
+        <div class="collapse navbar-collapse" id="btn-coll"></div>
+        <ul class="navbar-link">
+            <li class="dropdown"><a class="dropdown-toggle" data-bs-toggle="dropdown" href="#">Electronics Items</a>
+                <ul class="dropdown-menu bg-info">
+                    <li><a href="#">Mobile Accessories</a></li>
+                    <li><a href="#">Refrigerators</a></li>
+                    <li><a href="#">TV and LEDs</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Mens Items</a></li>
+            <li><a href="#">Womens Items</a></li>
+            <li><a href="#">Kids Items</a></li>
+            <li><a href="#">Home Products</a></li>
+            <li><a href="#">Offers Zone</a></li>
+            <li><a href="#">Feedback</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+    
+    <!-- content starts here -->
+    <section id="content">
+        <div class="container-fluid p-5 mt-5">
+            <div class="row">
+                <div class="col-md-4 shadow mt-3 p-4 sidebar">
+                    <ul class="sidebar-link">
+                        <li><a href="#" class="h3 bg-info p-2 text-white w-100">Select Categories</a></li>
+                        <li><a href="#">Mens Items</a></li>
+                        <li><a href="#">Womens Items</a></li>
+                        <li><a href="#">Kids Items</a></li>
+                        <li><a href="#">Offers Zone</a></li>
+                        <li><a href="#">Home Products</a></li>
+                        <li><a href="#"><img src="https://media.tenor.com/_yndIq235YwAAAAj/terrabyt-terrabyt" class="img-fluid"></a></li>
+                    </ul>
+                </div>
+            
+                <div class="col-md-7 ms-5 shadow mt-3 p-5">
+                    <h3>The Issues you are facing - FAQs</h3>
+                    <br>
+                    <div class="accordion" id="item1">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                             How do I return my order ?
+                            </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#item1">
+                            <div class="accordion-body">
+                               Place a return request in the Orders page. You will get an option to choose refund/replace/exchange as per our return policy.
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="accordion" id="item2">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                How do I place a request for order replacement?
+                            </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#item2">
+                            <div class="accordion-body">
+                               Place a return request in the Orders page. You will get an option to choose refund/replace/exchange as per our return policy.
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="accordion" id="item3">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                What if I miss my Flipkart order pickup?
+                            </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#item3">
+                            <div class="accordion-body">
+                                Do not worry,the delivery agent will try to pick up again on the next working day.
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                </div>
+        
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer section start here  -->
+
+    <section id="footer">
+        <div class="container-fluid p-5 bg-info mt-5">
+            <div class="row">
+                <div class="col-md-4 p-4">
+                    <ul class="footer-link">
+                        <li><a href="#" class="h4">Our Links</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">24x7 support</a></li>
+                    </ul>  
+                </div>
+    
+                <div class="col-md-4 p-4">
+                    <ul class="footer-link">
+                    <li><a href="#" class="h4">Help</a></li>
+                    <li><a href="#">Cancellations & Returns</a></li>
+                    <li><a href="#">Terms of uses</a></li>
+                    <li><a href="#">Security</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">24x7 support</a></li>
+                    </ul>  
+                </div>
+                
+      
+                <div class="col-md-4 p-4">
+                    <ul class="footer-link">
+                    <li><a href="#" class="h4">Registered Office & Addreses</a></li>
+                    <li><a href="#">Flipkart Internet Private Limited,
+                        Buildings Alyssa, Begonia & 
+                        Clove Embassy Tech Village,
+                        Outer Ring Road, Devarabeesanahalli Village,
+                        Bengaluru, 560103,
+                        Karnataka, India
+                        CIN : U51109KA2012PTC066107
+                        Telephone: 044-45614700
+                        </a></li>
+                    </ul>  
+                </div>
+            </div>  
+            <p class="p-4">Copyright @ 202-2024 All right reserved company</p>  
+        </div>
+    </section>
+
+    
+</body>
+</html>
