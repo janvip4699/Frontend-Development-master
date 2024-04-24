@@ -61,79 +61,28 @@
             <li><a href="#">Womens Items</a></li>
             <li><a href="#">Kids Items</a></li>
             <li><a href="#">Home Products</a></li>
-            <li><a href="#">Offers Zone</a></li>
+            <!-- <li><a href="#">Offers Zone</a></li> -->
             <li><a href="#">Feedback</a></li>
             <li><a href="#">Contact Us</a></li>
+            <li><a href="cart.html" class="ms-1 text-dark fs-5">Cart<span class="bi bi-cart">0</span></a></li>
         </ul>
     </nav>
-    
+
     <!-- content starts here -->
     <section id="content">
         <div class="container-fluid p-5 mt-5">
-            <h3>Flipkart Help Center | 24x7 Customer Care Support</h3>
-            <p>The Flipkart Help Centre page lists out various types of issues that you may have encountered so that there can be quick resolution and you can go back to shopping online. For example, you can get more information regarding order tracking, delivery date changes, help with returns (and refunds), and much more. The Flipkart Help Centre also lists out more information that you may need regarding Flipkart Plus, payment, shopping, and more. The page has various filters listed out on the left-hand side so that you can get your queries solved quickly, efficiently, and without a hassle. You can get the Flipkart Help Centre number or even access Flipkart Help Centre support if you need professional help regarding various topics. The support executive will ensure speedy assistance so that your shopping experience is positive and enjoyable. You can even inform your loved ones of the support page so that they can properly get their grievances addressed as well. Once you have all your queries addressed, you can pull out your shopping list and shop for all your essentials in one place. You can shop during festive sales to get your hands on some unbelievable deals online. This information is updated on 10-Apr-24</p>
-            <div class="row">
-                <div class="col-md-4 shadow mt-3 p-5 bg-white">
-                    <ul>
-                        <li>which type of issue</li>
-                        <li>Are you issues resolved</li>
-                        <li>FAQ is better for solutions</li>
-                        <li>TASK is is easy</li>
-                    </ul>
+           <div class="card w-75 mx-auto">
+                <div class="card-header">Cart<span class="bi bi-cart text-dark fs-5">0</span></div>
+                <div class="card-body">
+                    <p class="text-center">
+                        <img src="images/cart.webp" class="img-fluid w-25 mx-auto">
+                        <p class="text-center fs-4">Missing cart items ?</p>
+                        <p class="text-center">Login to see the items you added previously</p>
+                        <p class="text-center"><button type="submit" data-bs-toggle="modal" data-bs-target="#signup" class="btn btn-md btn-danger w-25 p-2 fs-6 ">Login</button></p>
+                    </p>
                 </div>
-            
-                <div class="col-md-7 ms-5 shadow mt-3 p-5">
-                    <h3>The Issues you are facing - FAQs</h3>
-                    <br>
-                    <div class="accordion" id="item1">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingOne">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                             How do I return my order ?
-                            </button>
-                            </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#item1">
-                            <div class="accordion-body">
-                               Place a return request in the Orders page. You will get an option to choose refund/replace/exchange as per our return policy.
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-        
-                    <div class="accordion" id="item2">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingTwo">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                                How do I place a request for order replacement?
-                            </button>
-                            </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#item2">
-                            <div class="accordion-body">
-                               Place a return request in the Orders page. You will get an option to choose refund/replace/exchange as per our return policy.
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-        
-                    <div class="accordion" id="item3">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingThree">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-                                What if I miss my Flipkart order pickup?
-                            </button>
-                            </h2>
-                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#item3">
-                            <div class="accordion-body">
-                                Do not worry,the delivery agent will try to pick up again on the next working day.
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-        
-                </div>
-        
-                </div>
-            </div>
+           </div>
+                        
         </div>
     </section>
 
@@ -148,7 +97,7 @@
                         <li><a href="#">About Us</a></li>
                         <li><a href="#">Contact Us</a></li>
                         <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
                         <li><a href="#">24x7 support</a></li>
                     </ul>  
                 </div>
@@ -160,7 +109,7 @@
                     <li><a href="#">Terms of uses</a></li>
                     <li><a href="#">Security</a></li>
                     <li><a href="#">Privacy</a></li>
-                    <li><a href="#">24x7 support</a></li>
+                    <li><a href="faq.html">FAQs</a></li>
                     </ul>  
                 </div>
                 
@@ -184,6 +133,52 @@
         </div>
     </section>
 
-    
+    <!-- sign up modal -->
+    <div class="modal fade" role="dialog" id="signup">
+        <div class="modal-dialog" style="max-width: 50%; margin-top: 5%;">
+            <div class="modal-content p-5 bg-white">
+                <!-- register form -->
+                <h4 class="text-black">Register Form <span class="bi bi-person"></span><button type="button" class="btn btn-danger text-white border border-0 btn-sm float-end" data-bs-dismiss="modal">&times</button></h4>
+                <hr class="border border-1 border-white">
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul class="sidebar-info">
+                            <li><a href="#"><h6 class="text-dark">Why join with us!</h6></a></li>
+                            <li><a href="#">24*7 Support</a></li>
+                            <li><a href="#">Return Policy</a></li>
+                            <li><a href="#">Online Payments</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <form method="post">
+                            <div class="form-group mt-2">
+                                <input type="text" placeholder="FirstName *" class="form-control">
+                            </div>
+                            <div class="form-group mt-2">
+                                <input type="text" placeholder="LastName *" class="form-control">
+                            </div>
+                            <div class="form-group mt-2">
+                                <input type="email" placeholder="Email *" class="form-control">
+                            </div>
+                            <div class="form-group mt-2">
+                                <input type="password" placeholder="Password *" class="form-control">
+                            </div>
+                            <div class="form-group mt-2">
+                                <input type="date" placeholder="DOB *" class="form-control">
+                            </div>
+                            <div class="form-group mt-2">
+                                <input type="submit" value="SignUp" class="btn btn-sm btn-dark text-white">
+                                <input type="reset" value="Reset" class="btn btn-sm btn-danger text-white">
+                            </div>
+                            <div class="form-group mt-2">
+                                <b>Already have an account ? <a href="login.html" data-bs-toggle="products-info" data-bs-target="#login">Login here</a></b>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

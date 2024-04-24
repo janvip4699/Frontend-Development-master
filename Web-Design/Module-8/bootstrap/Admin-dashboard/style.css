@@ -1,0 +1,28 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+.sidebar-links li
+{
+    display: block;
+    padding: 15px;
+}
+.sidebar-links a
+{
+    color: white;
+    text-decoration: none;
+    list-style: none;
+    list-style-type: none;
+}
+.sidebar
+{
+    height: 100vh !important;
+}
+.dashboard
+{
+    text-decoration: none;
+    color: white;
+}

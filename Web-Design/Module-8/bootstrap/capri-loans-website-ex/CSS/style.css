@@ -1,0 +1,65 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+.navbar
+{
+    width: 100%;
+    height: auto;
+}
+.navbar-link li
+{
+    display: inline-block;
+    padding: 3px;
+}
+.navbar-link a
+{
+    color: green;
+    text-decoration: none;
+    list-style: none;
+    list-style-type: none;
+}
+.dropdown:hover .dropdown-menu
+{
+    display: block;
+}
+.dropdown-menu li
+{
+    border-bottom: 1px solid lightgray;
+    padding: 10px 20px;
+    width: 210px;
+}
+.dropdown-menu a:hover
+{
+    color: orange;
+}
+.borderd
+{
+    border-left: 2px dashed green;
+}
+.bordernum
+{
+    border-bottom: 2px dotted orange;
+    border-left: 2px dotted orange;
+}
+.borderright
+{
+    border-right: 2px dotted orange;
+}
+.borderleft
+{
+    border-left: 2px dotted orange;
+}
+.footer-link a
+{
+    color: white;
+    text-decoration: none;
+}
+.footer-link li
+{
+    list-style: none;
+    list-style-type: none;
+}
