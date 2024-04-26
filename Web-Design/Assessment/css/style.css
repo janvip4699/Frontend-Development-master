@@ -164,3 +164,46 @@ hr
     height: 10px;
     padding: 10px;
 }
+
+.pass_check
+{
+    margin: auto;
+    padding: auto;
+    width: 30%;
+    margin-top: 5%;
+}
+.pass_check input
+{
+    width: 200px;
+    height: 30px;
+}
+.weak-password
+{
+    background-color: #c71019;
+    width: 40px;
+    height: auto;
+    color: white;
+    padding: 10px;
+    margin-top: 2%;
+    font-size: 20px;
+}
+.strong-password
+{
+    background-color: #327d29;
+    width: 50px;
+    height: auto;
+    color: white;
+    padding: 10px;
+    margin-top: 2%;
+    font-size: 20px;
+}
+.medium-password
+{
+    background-color: #ccc616;
+    width: 60px;
+    height: auto;
+    color: white;
+    padding: 10px;
+    margin-top: 2%;
+    font-size: 20px;
+}
