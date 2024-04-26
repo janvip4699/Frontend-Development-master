@@ -1,0 +1,209 @@
+.div1
+{
+    background-color: lightblue;
+    width: 80%;
+    height: 800px;
+    margin: auto;
+}
+.p1
+{
+    font-size: 30px;
+    padding-left: 50px;
+    padding-top: 20px;
+    font-family :Arial, Helvetica, sans-serif;
+}
+hr
+{
+    width: 92%;
+    height: auto;
+    margin-left: 50px;
+}
+#address-section
+{
+    background-color: white;
+    width: 92%;
+    height: auto;
+    margin: auto;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.add1
+{
+    grid-column: 1/2;
+}
+#para
+{
+    padding-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.fa-phone
+{
+    font-size: 50px;
+    color: white;
+    width: 15px;
+    height: 15px;
+    padding: 2px;
+    background-color: rgb(204, 44, 44);
+    border-radius: 20%;
+    margin-top: 14%;
+}
+.phone
+{
+    color: rgb(204, 44, 44);
+}
+.fa-envelope
+{
+    font-size: 20px !important;
+    color: rgb(70, 162, 199);
+    width: 30px;
+    height: 30px;
+    border-radius: 20%;
+    margin-top: 3%;
+}
+.email
+{
+    color: rgb(70, 162, 199);
+}
+.fa-location-dot
+{
+    font-size: 50px;
+    color: rgb(204, 44, 44);
+    width: 50px;
+    height: 50px;
+}
+#form-section
+{
+    background-color: white;
+    width: 92%;
+    height: auto;
+    margin: auto;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.frm1
+{
+    grid-column: 1/1;
+}
+.frm1 input
+{
+    width: 200px;
+    height: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5%;
+    border: solid 1px lightgray;
+}
+.frm1 textarea
+{
+    border-radius: 5%;
+    border: solid 1px lightgray;
+}
+.frm1 form
+{
+    padding-left: 20px;
+    padding-top: 10px;
+    float: left;
+}
+.frm1 input[type="submit"]
+{
+    width: 60px;
+    height: 40px;
+    background-color: rgb(204, 44, 44);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 50px;
+}
+.frm1 input::placeholder
+{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+}
+.frm1 textarea::placeholder
+{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+}
+.frm2 iframe
+{
+    padding-top: 10px;
+}
+.fa-facebook 
+{
+    background: #3B5998;
+    color: white;
+    width: 10px;
+    height: 10px;
+    padding: 10px;
+}
+.fa-twitter 
+{
+    background: #55ACEE;
+    color: white;
+    width: 10px;
+    height: 10px;
+    padding: 10px;
+}
+.fa-linkedin 
+{
+    background: #007bb5;
+    color: white;
+    width: 10px;
+    height: 10px;
+    padding: 10px;
+}
+.fa-github
+{
+    background: black;
+    color: white;
+    width: 10px;
+    height: 10px;
+    padding: 10px;
+}
+
+.pass_check
+{
+    margin: auto;
+    padding: auto;
+    width: 30%;
+    margin-top: 5%;
+}
+.pass_check input
+{
+    width: 200px;
+    height: 30px;
+}
+.weak-password
+{
+    background-color: #c71019;
+    width: 40px;
+    height: auto;
+    color: white;
+    padding: 10px;
+    margin-top: 2%;
+    font-size: 20px;
+}
+.strong-password
+{
+    background-color: #327d29;
+    width: 50px;
+    height: auto;
+    color: white;
+    padding: 10px;
+    margin-top: 2%;
+    font-size: 20px;
+}
+.medium-password
+{
+    background-color: #ccc616;
+    width: 60px;
+    height: auto;
+    color: white;
+    padding: 10px;
+    margin-top: 2%;
+    font-size: 20px;
+}

@@ -23,8 +23,8 @@
             var number = /([0-9])/;
             var alphabets = /([a-zA-Z])/;
             var special_characters = /([~,!,@,#,$,%,^,&,*,-,_,+,=,?,>,<])/;
-            var password = $('#pass').val().trim();
-            if (password.length < 6) 
+            var password = $('#pass').val().trim(); //getting the value from password field
+            if (password.length < 6) //checking if password length is less than 6 then it's a weak password
             {
                 $('#password-strength-status').removeClass();
                 $('#password-strength-status').addClass('weak-password');
@@ -32,12 +32,13 @@
             } 
             else 
             {
-                if (password.match(number) && password.match(alphabets) && password.match(special_characters)) {
+                if (password.match(number) && password.match(alphabets) && password.match(special_characters)) //checking if password length matches with conditions included then it's a strong password
+                {
                     $('#password-strength-status').removeClass();
                     $('#password-strength-status').addClass('strong-password');
                     $('#password-strength-status').html("Strong");
                 }
-                else 
+                else // otherwise it's medium strength password
                 {
                     $('#password-strength-status').removeClass();
                     $('#password-strength-status').addClass('medium-password');
