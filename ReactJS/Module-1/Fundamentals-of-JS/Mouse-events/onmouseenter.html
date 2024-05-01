@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    
+</head>
+<body>
+   <h2>onmouseenter Event</h2>
+   <p>Move the mouse pointer onto the image to see mouseenter event!</p>
+   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuRkBcvkWBvuM77i3SzI0IZd-NCKWWDiGj_HA-9nZsbA&s" onmouseenter="mouseEnter()" id="me">
+   <script>
+        function mouseEnter()
+        {
+            document.getElementById("me").style.width="500px";
+            document.getElementById("me").style.height="500px";
+            alert("You entered onto the image!!");
+        }
+   </script>
+</body>
+</html>

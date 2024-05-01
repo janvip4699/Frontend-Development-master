@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        div
+        {
+            width: 400px;
+            height: 400px;
+            background-color: lightblue;
+        }
+    </style>
+    
+</head>
+<body>
+   <h2>onmousemove Event</h2>
+   <p>Move the mouse pointer onto the element to see mousemove event!</p>
+   <div onmousemove="mouseMove()" id="mm"></div>
+   <script>
+        function mouseMove()
+        {
+            document.getElementById("mm").style.backgroundColor="blue";
+           alert("Mouse pointer is moving!!");
+        }
+   </script>
+</body>
+</html>

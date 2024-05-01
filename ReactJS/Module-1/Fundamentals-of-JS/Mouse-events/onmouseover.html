@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        div
+        {
+            width: 400px;
+            height: 400px;
+            background-color: lightblue;
+        }
+    </style>
+    
+</head>
+<body>
+   <h2>onmouseover Event</h2>
+   <p>Place the mouse pointer over the element to see mouseout event!</p>
+   <div onmouseover="mouseOver()" id="mm"></div>
+   <script>
+        function mouseOver()
+        {
+            alert("Mouse pointer is over the element!!");
+        }
+   </script>
+</body>
+</html>
