@@ -1,0 +1,6 @@
+ajax : stands for asynchrounous javascript and xml
+       ajax is used to load content without page realod or refresh.
+       a:asynchrounous
+       j:javascript 
+       a:and 
+       x:xml(x-tensible markup language) load a dynamic content from server 
