@@ -6,6 +6,17 @@
     font-family: Inter-ExtraBold;
     src: url(../fonts/Inter-ExtraBold.otf);
 }
+@font-face {
+    font-family: Inter-Bold;
+    src: url(../fonts/Inter-Bold.otf);
+}
+body
+{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
 .fonts
 {
     font-family: LibreBaskerville-Regular;
@@ -15,7 +26,17 @@
 {
     font-family: Inter-ExtraBold;
     font-size: 28px;
-    margin-left: 23%;
+    margin-left: 20%;
+}
+.heading-fonts
+{
+    font-family: Inter-ExtraBold;
+    font-size: 28px;
+}
+.bold-fonts
+{
+    font-family: Inter-Bold;
+    font-size: 22px;
 }
 body
 {
@@ -45,4 +66,76 @@ body
 {
     text-decoration: none;
     color: #000000;
+}
+.banner-fonts
+{
+    font-family: Inter-ExtraBold;
+    font-size: 40px;
+    margin-left: 26%;
+    margin-top: 28%;
+    color: #f5f5f5;
+}
+.banner-fonts1
+{
+    font-family: Inter-ExtraBold;
+    font-size: 55px;
+    margin-left: 26%;
+    margin-top: -5%;
+    color: #f5f5f5;
+}
+.banner-fonts2
+{
+    font-family: LibreBaskerville-Regular;
+    font-size: 25px;
+    color: #f5f5f5;
+    margin-left: 26%;
+    margin-top: -1%;
+}
+.search-btn
+{
+    background-color: #0075bf;
+    
+}
+.ip_grp1
+{
+    margin-top: 37%;
+    margin-left: 10%;
+}
+.ip_grp2
+{
+    margin-top: 41%;
+    margin-left: 10%;
+}
+.content1
+{
+    margin-top: 50%;
+}
+.centered
+{
+    margin-top: 60%;
+}
+.travel
+{
+    margin-top: -10%;
+    margin-left: -2%;
+}
+.background
+{
+    margin-top: 17%;
+    font-size: 12px;
+    margin-left: 38%;
+}
+.nums
+{
+    font-family: LibreBaskerville-Regular;
+    font-size: 28px;
+}
+.join_btn button
+{
+    margin-top: 25%;
+    background-color: #000000;
+}
+.book-btn
+{
+    background-color: #0075bf;
 }
