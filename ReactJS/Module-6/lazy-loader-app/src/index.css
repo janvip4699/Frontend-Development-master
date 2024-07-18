@@ -1,0 +1,16 @@
+body 
+{
+  /* background-color: lightgray; */
+  background-color: black;
+}
+.loader-style
+{
+  width: 50% !important;
+  height: auto !important;
+  margin: auto;
+  margin-left: 25% !important;
+  margin-top: 5%;
+  position: absolute;
+  background-color: black;
+  
+}

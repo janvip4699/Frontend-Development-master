@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.header-links li
+{
+    display: inline-block;
+    margin: 8px;
+}
+.header-links a
+{
+    text-decoration: none;
+    list-style-type: none;
+    color: white;
+}

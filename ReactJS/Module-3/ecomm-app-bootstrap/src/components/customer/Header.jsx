@@ -1,5 +1,6 @@
 import React from "react";
 import {Container, Row, Button} from 'react-bootstrap'
+import { Link } from "react-router-dom";
 function Header()
 {
     return(
@@ -17,7 +18,7 @@ function Header()
                 </div>
                 <div className="col-md-4 position-relative d-flex">
                     <div className="d-flex">
-                        <Button className="btn btn-md btn-dark bg-dark text-white ms-5">Account <span className="bi bi-person"></span></Button>
+                        <Link to="/create-account"><Button className="btn btn-md btn-dark bg-dark text-white ms-5">Account <span className="bi bi-person"></span></Button></Link>
                     </div>
                     <div className="d-flex">
                         <span className="bi bi-facebook fs-3 ms-5"></span>

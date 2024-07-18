@@ -1,6 +1,7 @@
 import React from "react";
+import ReactDOM from "react-dom/client";
 import {Button, Container, Row} from 'react-bootstrap';
-import product1 from '../..//assets/images/product1.webp'
+import product1 from '../../assets/images/product1.webp'
 import product2 from '../../assets/images/product2.webp'
 import product3 from '../../assets/images/product3.webp'
 import product4 from '../../assets/images/product4.webp'
@@ -11,37 +12,29 @@ function Content()
 {
     return(
         <>
-            <div id="carouselExampleControls" className="carousel slide" data-ride="carousel">
-            <div className="carousel-inner">
-                <div className="carousel-item active">
-                <img className="d-block w-100" src={slider1} alt="First slide" style={{width:"100%", height:"400px"}} />
+            {/* Slider here */}
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                <img src={slider1} class="d-block w-100" alt="..." style={{width: "100%", height: "350px"}}/>
                 </div>
-                <div className="carousel-item">
-                <img className="d-block w-100" src={slider2} alt="Second slide" style={{width:"100%", height:"400px"}}/>
+                <div class="carousel-item">
+                <img src={slider2} class="d-block w-100" alt="..." style={{width: "100%", height: "350px"}}/>
                 </div>
-                <div className="carousel-item">
-                <img className="d-block w-100" src={slider3} alt="Third slide" style={{width:"100%", height:"400px"}} />
+                <div class="carousel-item">
+                <img src={slider3} class="d-block w-100" alt="..." style={{width: "100%", height: "350px"}}/>
                 </div>
             </div>
-            <a
-                className="carousel-control-prev"
-                href="#carouselExampleControls"
-                role="button"
-                data-slide="prev"
-            >
-                <span className="carousel-control-prev-icon" aria-hidden="true" />
-                <span className="sr-only">Previous</span>
-            </a>
-            <a
-                className="carousel-control-next"
-                href="#carouselExampleControls"
-                role="button"
-                data-slide="next"
-            >
-                <span className="carousel-control-next-icon" aria-hidden="true" />
-                <span className="sr-only">Next</span>
-            </a>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
             </div>
+
 
             <Container className="p-5">
                 <Row>
