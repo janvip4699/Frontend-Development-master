@@ -3,7 +3,7 @@ function ListView(props)
 {
     return(
         <>
-            <li>{props.item}</li>  
+           <i className="bi bi-check"></i><li style={{"listStyleType":"none","fontSize":"20px","backgroundColor":"white","padding":"5px"}}>{props.item}</li>
         </>
     )
 }
@@ -18,10 +18,12 @@ function List()
 
     return(
         <>
+            <div className="list-background">
             <h1>The "React Way" to Render a List</h1>
             <ul>
                 {list.map((items) => <ListView key= {items.id} item={items.item} />)}
             </ul>
+            </div>
         </>
     )
 }
