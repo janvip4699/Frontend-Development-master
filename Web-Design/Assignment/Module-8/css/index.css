@@ -10,3 +10,10 @@
 {
     text-decoration: none;
 }
+hr
+{
+    width: 90%; 
+    text-align: center; 
+    margin-left: 5%; 
+    margin-top: 4%;
+}
