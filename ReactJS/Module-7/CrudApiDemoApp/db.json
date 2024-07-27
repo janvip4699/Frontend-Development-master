@@ -1,0 +1,36 @@
+{
+  "add-data": [
+    {
+      "id": "6122",
+      "name": "Janvi Parmar",
+      "email": "janvip4699@gmail.com",
+      "phone": "09978454194",
+      "address": "4-narmada park, vidhyakunj society main road, Near Amin marg",
+      "pincode": "360001"
+    },
+    {
+      "id": "2377",
+      "name": "Raj",
+      "email": "raj0419@gmail.com",
+      "phone": "9879084805",
+      "address": "Happy Highland, Bopal, Manipur, Ahemdabad",
+      "pincode": "380004"
+    },
+    {
+      "id": "1d74",
+      "name": "abcd",
+      "email": "abcd",
+      "phone": "9876543210",
+      "address": "abcd",
+      "pincode": "123456"
+    },
+    {
+      "id": "c75b",
+      "name": "Prisha",
+      "email": "prisha10@gmail.com",
+      "phone": "1234567890",
+      "address": "Pune",
+      "pincode": "411057"
+    }
+  ]
+}
