@@ -4,6 +4,7 @@ import Swal from "sweetalert2";
 
 function Edit()
 {
+    //destructuring of data
     const [data, setData] = useState({
         name: "",
         email: "",
@@ -11,8 +12,10 @@ function Edit()
         address: "",
         pincode: ""
     });
-
+    
     const [errors, setErrors] = useState({});
+    const{id} = useParams();
+    const Navigate = useNavigate();
 
     const formHandler=(e)=>{
         const{name,value}=e.target;

@@ -2,10 +2,13 @@ import React, {useState, useEffect} from "react";
 import { Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import axios from "axios";
+import { Navigate, useNavigate } from "react-router-dom";
+
 function Home()
 {
     //destructuring of data
     const [data, setData] = useState();
+    const Navigate = useNavigate();
     //fetch all dynamic data
     useEffect(()=>{
         //fetch data here
@@ -45,8 +48,8 @@ function Home()
                                 <td>{item.phone}</td>
                                 <td>{item.address}</td>
                                 <td>{item.pincode}</td>
-                                <td><i className="bi bi-trash-fill m-2 border border-1 border-black rounded p-1 text-danger"></i>
-                                    <Link to="/edit-data"><i className="bi bi-pencil-fill m-2 border border-1 border-black rounded p-1 text-primary"></i></Link>
+                                <td><button type="button" className="btn btn-sm btn-danger bg-danger text-white bi bi-trash m-1" onClick={()=>{Navigate(`/delete-data/${item.id}`)}}></button>
+                                <button type="button" className="btn btn-sm btn-primary bg-primary text-white bi bi-pencil m-1" onClick={()=>{Navigate(`/edit-data/${item.id}`)}}></button>
                                 </td>
                                 </tr>
                             </>
