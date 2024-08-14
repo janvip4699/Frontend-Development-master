@@ -10,6 +10,7 @@ import SideBar from './components/Admin/SideBar';
 import AddAbstract from './components/Admin/AddAbstract';
 import AbstractData from './components/Admin/AbstractData';
 import DeleteData from './components/Admin/DeleteData';
+import EditAbstract from './components/Admin/EditAbstract';
 import App from './App';
 import "bootstrap-icons/font/bootstrap-icons.css";
 
@@ -25,6 +26,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path="/admin-dashboard/add-abstract" element={<AddAbstract/>}></Route>
         <Route path="/admin-dashboard/abstract-data" element={<AbstractData/>}></Route>
         <Route path="/admin-dashboard/delete-data/:id" element={<DeleteData/>}></Route>
+        <Route path="/edit-data/:id" element={<EditAbstract/>}></Route>
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,

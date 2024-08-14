@@ -15,7 +15,7 @@ function DeleteTask()
         axios.delete(`http://localhost:8000/add-task/${id}`).then(()=>{
             Swal.fire({
                 title: "Oh",
-                text: "Task is deleted Successfully !!",
+                text: "Task deleted Successfully !!",
                 icon: "error"
               });
             Navigate("/");
