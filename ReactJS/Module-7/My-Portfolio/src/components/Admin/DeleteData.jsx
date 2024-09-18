@@ -11,7 +11,7 @@ function DeleteData()
 
     useEffect(()=>{
         axios.delete(`http://localhost:4000/add-abstract/${id}`).then(()=>{
-            setData(true);
+            // setData(true);
             Navigate('/admin-dashboard/abstract-data');
         })
     },[]);

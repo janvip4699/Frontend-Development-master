@@ -1,0 +1,66 @@
+{
+  "sell-car": [
+    {
+      "id": "0a61",
+      "city": "Rajkot",
+      "make": "Skoda",
+      "model": "Kushaq",
+      "fuel": "Petrol",
+      "color": "Carbon grey",
+      "km": "4000",
+      "owner": "First owner",
+      "price": "14 Lakh",
+      "imgs": "C:\\fakepath\\logo.png"
+    },
+    {
+      "id": "18b2",
+      "city": "Ahemdabad",
+      "make": "Skoda",
+      "model": "Kushaq",
+      "fuel": "Petrol",
+      "color": "Carbon grey",
+      "km": "4000",
+      "owner": "First owner",
+      "price": "14 Lakh",
+      "imgs": "C:\\fakepath\\logo1.png"
+    },
+    {
+      "id": "b984",
+      "city": "Mumbai",
+      "make": "Tata",
+      "model": "Tiago",
+      "fuel": "Others",
+      "color": "Grey",
+      "km": "1500",
+      "owner": "First owner",
+      "price": "10 Lakh",
+      "imgs": "C:\\fakepath\\slider1.jpg"
+    }
+  ],
+  "users": [
+    {
+      "id": "1643",
+      "UserName": "abc",
+      "Email": "abc@gmail.com",
+      "Password": "abc@123",
+      "Role": "user",
+      "ProfileImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLe5PABjXc17cjIMOibECLM7ppDwMmiDg6Dw&s"
+    },
+    {
+      "id": "1192",
+      "UserName": "abc",
+      "Email": "abc@gmail.com",
+      "Password": "abc@123",
+      "Role": "user",
+      "ProfileImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLe5PABjXc17cjIMOibECLM7ppDwMmiDg6Dw&s"
+    },
+    {
+      "id": "a57c",
+      "UserName": "abc",
+      "Email": "abc@gmail.com",
+      "Password": "abc@123",
+      "Role": "user",
+      "ProfileImage": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dXNlcnxlbnwwfHwwfHx8MA%3D%3D"
+    }
+  ]
+}
