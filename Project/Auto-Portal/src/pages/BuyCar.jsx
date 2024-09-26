@@ -8,7 +8,7 @@ const BuyCar = () => {
     <>
       <Header></Header>
       <BuyingCars></BuyingCars>
-      <Footer></Footer>
+      {/* <Footer></Footer> */}
     </>
   )
 }

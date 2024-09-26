@@ -1,28 +1,55 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import logo from '../assets/images/logo.png'
-import { Link } from 'react-router-dom'
+import { Link, Navigate, useNavigate } from 'react-router-dom'
 import { FaRegUserCircle } from "react-icons/fa";
 import { SlLocationPin } from "react-icons/sl";
 import Register from './Register';
 import { Modal } from 'react-modal';
-
+import { useUserAuth } from '../Context/UserAuthContext';
 const Header = () => {
+
+  const { logOut, user } = useUserAuth();
+  const [locationData, setLocationData] = useState();
+  const Navigate = useNavigate();
+
+  const handleLogout = async () => {
+    try {
+      await logOut();
+      Navigate("/");
+    }
+    catch (error) {
+      console.log(error.message);
+    }
+  };
+
+  const GetCities = async () => {
+    try {
+      const response = await axios.get(`http://localhost:4000/locations`);
+      setLocationData(response.data);
+
+    } catch (error) {
+      console.log(error);
+    }
+  };
+  useEffect(() => {
+    GetCities();
+  }, [locationData]);
 
   return (
     <header className='bg-primary text-secondary py-4 w-full'>
       <nav className='container flex gap-20 items-center justify-between'>
         <div className='flex items-center gap-1'>
-          <Link to="/" className='font-semibold text-3xl'>AutoPortal</Link>
+          <Link to="/home" className='font-semibold text-3xl'>AutoPortal</Link>
           <img src={logo} alt="logoimg" style={{ width: "100%", height: "40px" }}></img>
         </div>
         <div className='hidden md:flex items-center gap-5 font-medium text-lg'>
-          <Link to="/" className="hover:text-black transition duration-200 ease-linear">Home</Link>
+          <Link to="/home" className="hover:text-black transition duration-200 ease-linear">Home</Link>
           <Link to="/about" className="hover:text-black transition duration-200 ease-linear">About Us</Link>
           <Link to="/buy-car" className="hover:text-black transition duration-200 ease-linear">Buy Car</Link>
           <Link to="/sell-car" className="hover:text-black transition duration-200 ease-linear">Sell Car</Link>
-          <Link to="/services" className="hover:text-black transition duration-200 ease-linear">Services</Link>
+          <Link to="/contact-us" className="hover:text-black transition duration-200 ease-linear">Contact Us</Link>
 
-          <div className="relative inline-block text-center">
+          {/* <div className="relative inline-block text-center">
             <div className="group">
               <button
                 type="button"
@@ -30,7 +57,7 @@ const Header = () => {
               >
                 <SlLocationPin size={30} className='text-secondary hover:text-black' />
                 {/* Dropdown arrow */}
-                <svg
+                {/* <svg
                   className="w-4 h-4 ml-2 -mr-1"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20"
@@ -38,59 +65,34 @@ const Header = () => {
                 >
                   <path fillRule="evenodd" d="M10 12l-5-5h10l-5 5z" />
                 </svg>
-              </button>
+              </button> */}
               {/* Dropdown menu */}
-              <div className="absolute left-0 w-28 origin-top-left bg-white divide-y divide-gray-100 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible hover: bg-secondary transition duration-500">
+              {/* <div className="absolute left-0 w-28 origin-top-left bg-white divide-y divide-gray-100 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible hover: bg-secondary transition duration-500">
                 <div className="py-1">
-                  <Link><a
-                    href="#"
-                    className="block px-4 py-2 text-sm text-black hover:bg-secondary"
-                  >
-                    Rajkot
-                  </a></Link>
-                  <Link><a
-                    href="#"
-                    className="block px-4 py-2 text-sm text-black hover:bg-secondary"
-                  >
-                    Ahemdabad
-                  </a></Link>
-                  <Link><a
-                    href="#"
-                    className="block px-4 py-2 text-sm text-black hover:bg-secondary"
-                  >
-                    Baroda
-                  </a></Link>
-                  <Link><a
-                    href="#"
-                    className="block px-4 py-2 text-sm text-black hover:bg-secondary"
-                  >
-                    Surat
-                  </a></Link>
-                  <Link><a
-                    href="#"
-                    className="block px-4 py-2 text-sm text-black hover:bg-secondary"
-                  >
-                    Mumbai
-                  </a></Link>
-                  <Link><a
-                    href="#"
-                    className="block px-4 py-2 text-sm text-black hover:bg-secondary"
-                  >
-                    Pune
-                  </a></Link>
+                  {locationData && locationData.map((item) => {
+                    return (
+                      <Link><a
+                        href="#"
+                        className="block px-4 py-2 text-sm text-black hover:bg-secondary"
+                      >
+                        {item.city}
+                      </a></Link>
+                    );
+
+                  })}
 
                 </div>
               </div>
             </div>
-          </div>
+          </div> */} 
 
-          <Link to="/login"><button
+          <button
             type="submit"
-            className="rounded-md px-3 py-2 text-lg font-semibold text-white shadow-sm border-2 border-secondary hover:bg-secondary hover:text-primary"
+            className="rounded-md px-3 py-2 text-lg font-semibold text-white shadow-sm border-2 border-secondary hover:bg-secondary hover:text-primary" onClick={handleLogout}
 
           >
-            Sign In
-          </button></Link>
+            Log-Out
+          </button>
 
 
         </div>

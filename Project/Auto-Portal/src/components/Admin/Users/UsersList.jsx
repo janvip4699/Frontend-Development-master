@@ -91,8 +91,7 @@ export default function UsersList() {
                         pagination
                         fixedHeader
                         highlightOnHover
-                        fixedHeaderScrollHeight="450px"
-                        subHeader
+                        fixedHeaderScrollHeight="450px"x
                     />
                 </div>
             </div>

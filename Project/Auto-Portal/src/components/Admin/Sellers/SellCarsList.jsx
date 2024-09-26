@@ -120,7 +120,6 @@ export default function SellcarList() {
                         fixedHeader
                         highlightOnHover
                         fixedHeaderScrollHeight="450px"
-                        subHeader
                     />
                 </div>
             </div>

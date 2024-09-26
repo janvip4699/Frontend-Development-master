@@ -1,11 +1,13 @@
 import React from 'react'
 import ContactForm from './ContactForm'
 import { Link } from 'react-router-dom'
+import Header from './Header'
 
 const ContactUs = () => {
     return (
-        <div className='container pt-20'>
-            <div>
+        <div>
+            <Header></Header>
+        <div className='container pt-20 pb-20'>
                 <h1 className='font-bold text-4xl px-12'>Contact <span className='text-primary'>US</span></h1>
                 <div className='flex flex-col-reverse justify-center md:flex-row gap-5 mt-14'>
                     {/* content section */}

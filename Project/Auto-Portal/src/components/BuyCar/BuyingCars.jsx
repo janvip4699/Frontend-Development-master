@@ -19,7 +19,7 @@ const BuyingCars = () => {
             <div>
                 <Sidebar/>
             </div>
-            <div className='w-full h-full px-5 py-5'>
+            <div className='w-full px-5 py-5'>
                 <h1 className='font-bold text-3xl border-b-4'>Best Used Cars</h1>
                 <div className='px-4 py-4'>
                     <BuyCarCard/>

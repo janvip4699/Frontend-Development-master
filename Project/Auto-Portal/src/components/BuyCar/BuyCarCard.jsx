@@ -19,7 +19,7 @@ const BuyCarCard = () => {
           return (
             <>
               <div class="max-w-sm rounded overflow-hidden shadow-lg">
-                <img class="w-full" src={item.img} alt="CarImg" />
+                <img class="w-full" src={item.imgs} alt="CarImg" />
                 <div class="px-6 py-4">
                   <div class="font-bold text-xl mb-2">{item.make} <span>{item.model}</span></div>
                   <p className='text-secondary text-sm'>{item.km} Km | {item.fuel} | {item.city} </p>
