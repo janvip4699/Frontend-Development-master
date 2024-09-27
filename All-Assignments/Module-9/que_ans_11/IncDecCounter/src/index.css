@@ -1,0 +1,19 @@
+body
+{
+    background-color: lightskyblue;  
+    margin: auto;
+}
+.inc_dec_counter
+{
+    text-align: center;
+    margin-top: 15%;
+}
+.inc_dec_counter button
+{
+    padding: 10px;
+    background-color: grey;
+    color: yellow;
+    border: none;
+    margin: 15px;
+    font-size: 15px;
+}

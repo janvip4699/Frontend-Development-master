@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <h1>8.  What is === operator?</h1>
+    <p>Javascript strict equality operator(===) is used to compare two operands and return true if both the value and type of operands are same. Since type conversion is not done, so even if the value stored in operands is the same but their type is different the operation will return false.</p>
+    <script>
+        let a=2;
+        let b="2";
+        let c=true;
+        let d=null;
+        let e=undefined;
+        let f=4;
+        let g= 4;
+        let h="Janvi";
+        let i="Janvi"
+        console.log(a===b); //It returns false because both data type is different
+        console.log(a===c); //It returns false because both data type is different
+        console.log(d===e); //It returns false because both data type is different
+        console.log(f===g); //It returns true because both are same
+        console.log(h===i); //It returns true because both are same
+    </script>
+</body>
+</html>

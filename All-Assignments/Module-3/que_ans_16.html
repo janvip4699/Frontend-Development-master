@@ -1,0 +1,48 @@
+<!-- How are active links different from normal links? 
+
+An HTML link is displayed in a different color depending on whether it has been visited, unvisited or active.
+
+An unvisited link is underlined and blue
+A visited link is underlined and purple
+An active link is underlined and red -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        a:link 
+        {
+            color: blue;
+            background-color: transparent;
+        }
+        a:visited 
+        {
+            color: purple;
+            background-color: transparent;
+        }
+        a:hover 
+        {
+            color: green;
+            background-color: transparent;
+        }
+        a:active 
+        {
+            color: red;
+            background-color: transparent;
+        }
+    </style>
+</head>
+<body>
+    <h1>16. How are active links different from normal links?</h1>
+    <hr>
+    <h3>Active links are the links which are currently active or visited and normal links are unvisited. By default, active links underlined and red and normal(unvisited) links are underlined and blue. But you can also change the link colors.</h3>
+    <a href="https://www.tops-int.com/" target="_blank">TOPS Technologies</a>
+</body>
+</html>
