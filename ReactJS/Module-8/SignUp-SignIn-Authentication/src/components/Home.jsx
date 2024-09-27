@@ -1,7 +1,7 @@
 import React from "react";
 import { Button } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
-import { UserAuthContextProvider } from "../Context/UserAuthContext";
+import { UserAuthContextProvider, useUserAuth } from "../Context/UserAuthContext";
 
 const Home = () => {
   const { logOut, user } = useUserAuth();
@@ -16,7 +16,7 @@ const Home = () => {
   };
   return (
     <>
-      <div className="p-4 box mt-0 text-center">
+      {/* <div className="p-4 box mt-0 text-center">
         Welcome <br />
         {user && user.email}
       </div>
@@ -26,7 +26,8 @@ const Home = () => {
             Log out
           </Button>
 
-      </div>
+      </div> */}
+      
     </>
   );
 };
