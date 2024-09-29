@@ -6,6 +6,7 @@ import { SlLocationPin } from "react-icons/sl";
 import Register from './Register';
 import { Modal } from 'react-modal';
 import { useUserAuth } from '../Context/UserAuthContext';
+import axios from 'axios';
 const Header = () => {
 
   const { logOut, user } = useUserAuth();

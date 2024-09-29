@@ -2,20 +2,20 @@ import React, { useState, useEffect, useRef } from 'react'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
 
-const BuyCarCard = () => {
-  const [data, setData] = useState();
-  const Navigate = useNavigate();
+const BuyCarCard = ({filteredCars}) => {
+   const [data, setData] = useState(filteredCars);
+  // const Navigate = useNavigate();
 
-  useEffect(() => {
-    axios.get("http://localhost:4000/sell-car").then((response) => {
-      setData(response.data);
-    })
-  }, [data]);
+  //console.log(filteredCars);
+
+  // useEffect(() => {
+    
+  // }, []);
 
   return (
     <div className="text-black rounded-xl mb-2 cursor-pointor grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5 mt-5">
       {
-        data && data.map((item) => {
+        filteredCars && filteredCars.map((item) => {
           return (
             <>
               <div class="max-w-sm rounded overflow-hidden shadow-lg">

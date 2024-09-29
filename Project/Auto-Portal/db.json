@@ -1,44 +1,8 @@
 {
   "sell-car": [
     {
-      "id": "bfd4",
+      "id": "97e0",
       "city": "Rajkot",
-      "make": "Skoda",
-      "model": "Kushaq",
-      "fuel": "Petrol",
-      "color": "Carbon grey",
-      "km": "4000",
-      "owner": "First owner",
-      "price": "14 Lakh",
-      "imgs": "https://imgd.aeplcdn.com/664x374/n/cw/ec/175993/kushaq-exterior-right-front-three-quarter.jpeg?isig=0&q=80"
-    },
-    {
-      "id": "ed37",
-      "city": "f256",
-      "make": "Tata",
-      "model": "Nexon",
-      "fuel": "Diesel",
-      "color": "Purple",
-      "km": "3000",
-      "owner": "First owner",
-      "price": "13 Lakh",
-      "imgs": "https://imgd-ct.aeplcdn.com/664x415/n/c1hbmbb_1688469.jpg?q=80"
-    },
-    {
-      "id": "da17",
-      "city": "c44f",
-      "make": "Honda",
-      "model": "Elevate",
-      "fuel": "Petrol",
-      "color": "Blue",
-      "km": "2000",
-      "owner": "Second owner",
-      "price": "16 Lakh",
-      "imgs": "https://imgd.aeplcdn.com/370x208/n/oqevvab_1673975.jpg?q=80"
-    },
-    {
-      "id": "21fa",
-      "city": "5e90",
       "make": "Tata",
       "model": "Tiago",
       "fuel": "Others",
@@ -46,6 +10,18 @@
       "km": "1000",
       "owner": "First owner",
       "price": "11 Lakh",
+      "imgs": "https://imgd.aeplcdn.com/664x374/n/cw/ec/175993/kushaq-exterior-right-front-three-quarter.jpeg?isig=0&q=80"
+    },
+    {
+      "id": "8e6e",
+      "city": "Ahemdabad",
+      "make": "MG",
+      "model": "Harrier",
+      "fuel": "Petrol",
+      "color": "Black",
+      "km": "1000",
+      "owner": "First owner",
+      "price": "16 Lakh",
       "imgs": "https://imgd-ct.aeplcdn.com/1056x660/n/4x5alcb_1713653.jpg?q=80"
     }
   ],

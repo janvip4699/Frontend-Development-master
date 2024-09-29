@@ -1,33 +1,53 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Sidebar from './Sidebar'
 import BuyCarCard from './BuyCarCard'
+import { useNavigate } from 'react-router-dom';
+import axios from 'axios';
 
 const BuyingCars = () => {
-  return (
-    <div className='w-full container h-screen mt-5'>
-        <div className='border-2 border-secondary p-5 rounded-md'>
+    //search method will be here
+    const [cardata, setcarData] = useState();
+    // const [searchcarData, setsearchcarData] = useState();
+    
+    const Navigate = useNavigate();
+
+    useEffect(() => {
+        axios.get("http://localhost:4000/sell-car").then((response) => {
+            setcarData(response.data);
+            setfiltercarData(response.data);
+        })
+    }, [cardata]);
+    const [filtercarData, setfiltercarData] = useState(cardata);
+
+    const handleSearch = (Cityvalue) => {
+        // const value = event.target.value;
+        // setsearchcarData(value);
+
+        const filter = cardata.filter((car) => {
+            const matchCity = car.city.toLowerCase().includes(Cityvalue.toLowerCase());
+            
+            //console.log(matchCity)
+            return matchCity;
+        })
+       // console.log(filter)
+        setfiltercarData(filter);
+    }
+
+    return (
+        <div className='w-full container h-screen mt-5'>
             <div className='flex flex-row'>
-                <div className=''>
-                    <h3>Budget :</h3>
-                </div>
                 <div>
-                    <h3>Sort By :</h3>
+                    <Sidebar onFilter={handleSearch} />
+                </div>
+                <div className='w-full px-5 py-5'>
+                    <h1 className='font-bold text-3xl border-b-4'>Best Used Cars</h1>
+                    <div className='px-4 py-4'>
+                        <BuyCarCard filteredCars={filtercarData} />
+                    </div>
                 </div>
             </div>
         </div>
-        <div className='flex flex-row'>
-            <div>
-                <Sidebar/>
-            </div>
-            <div className='w-full px-5 py-5'>
-                <h1 className='font-bold text-3xl border-b-4'>Best Used Cars</h1>
-                <div className='px-4 py-4'>
-                    <BuyCarCard/>
-                </div>
-            </div>
-        </div>
-    </div>
-  )
+    )
 }
 
 export default BuyingCars
