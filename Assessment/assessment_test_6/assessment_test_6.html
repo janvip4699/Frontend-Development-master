@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+    <script src='main.js'></script>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="pass_check">
+        <h1>Password Checker jQuery</h1>        
+        <input type="password" name="pass" id="pass" onkeyup="checkPasswordStrength()">
+        <div id="password-strength-status"></div>
+    </div>
+
+    <script>
+        function checkPasswordStrength() 
+        {
+            var number = /([0-9])/;
+            var alphabets = /([a-zA-Z])/;
+            var special_characters = /([~,!,@,#,$,%,^,&,*,-,_,+,=,?,>,<])/;
+            var password = $('#pass').val().trim(); //getting the value from password field
+            if (password.length < 6) //checking if password length is less than 6 then it's a weak password
+            {
+                $('#password-strength-status').removeClass();
+                $('#password-strength-status').addClass('weak-password');
+                $('#password-strength-status').html("Weak");
+            } 
+            else 
+            {
+                if (password.match(number) && password.match(alphabets) && password.match(special_characters)) //checking if password length matches with conditions included then it's a strong password
+                {
+                    $('#password-strength-status').removeClass();
+                    $('#password-strength-status').addClass('strong-password');
+                    $('#password-strength-status').html("Strong");
+                }
+                else // otherwise it's medium strength password
+                {
+                    $('#password-strength-status').removeClass();
+                    $('#password-strength-status').addClass('medium-password');
+                    $('#password-strength-status').html("Medium");
+                }
+            }
+        }
+
+    </script>
+
+    <script type="text/javascript" src="jquery-2.2.4.min.js"></script>
+    <script type="text/javascript" src="passChecker.jquery.js"></script>
+
+</body>
+</html>

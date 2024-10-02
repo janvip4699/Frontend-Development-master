@@ -1,0 +1,28 @@
+{
+  "add-product": [
+    {
+      "name": "Allen Solly Shirt Men",
+      "price": "$419",
+      "category": "Fashion",
+      "id": "b2fb"
+    },
+    {
+      "id": "c430",
+      "name": "Zara Women Shirt",
+      "price": "$333",
+      "category": "Fashion"
+    },
+    {
+      "id": "d8bb",
+      "name": "Allen Solly Women Purse",
+      "price": "$99",
+      "category": "Fashion"
+    },
+    {
+      "id": "a4f7",
+      "name": "abc",
+      "price": "100",
+      "category": "abc"
+    }
+  ]
+}

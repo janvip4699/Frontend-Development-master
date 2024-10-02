@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        .navbar
+        {
+            width: 100%;
+            height: auto;
+            padding: 0;
+            margin: 0;
+            background-color: lightgray;
+        }
+        .navbar li
+        {
+            display: inline-block;
+            font-size: 25px;
+            padding: 25px;
+            font-weight: bold;
+        }
+        .navbar a
+        {
+            list-style-type: none;
+            text-decoration: none;
+            color: black;
+        }
+        .cars
+        {
+            position: relative;
+        }
+
+        /* dropdown menu of cars, for dropdown menu main li cars has given position relative because it is parent and position : absoulte is given to its child that is the nested list of li cars which is list of cars, when hover on the cars the dropdown menu shows. */
+        .nestlist
+        {
+            position: absolute;
+            background-color: black;
+            width: 150px;
+            display: none;
+        }
+        .nestlist a
+        {
+            text-align: center;
+            font-size: 17px;
+            color: white;
+        }
+        .nestlist li:hover 
+        {
+            background-color: chocolate;    
+        }
+        .cars:hover .nestlist
+        {
+            display: block;
+        }
+            
+    </style>
+</head>
+<body>
+    <!-- Define the list types in HTML? explained with examples of navbar and apply a dropdown in navbar also ? -->
+    <!-- There are generally three types of list in HTML.
+    Ordered list, Unoredered list & Nested list. -->
+
+    <div class="navbar">
+        <!-- This is Unordered list and by default it shows list style type is round icon -->
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li class="cars"><a href="#">Cars</a>
+                <!-- This is nested list because its a list within another list in li -->
+                <!-- and also its for dropdown in the navbar element li -->
+                <ul class="nestlist">
+                    <li><a href="#">Tesla</a></li>
+                    <li><a href="#">Volvo</a></li>
+                    <li><a href="#">Mercedes</a></li>
+                    <li><a href="#">Audi</a></li>
+                    <li><a href="#">Jaguar</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </div>
+
+</body>
+</html>

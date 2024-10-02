@@ -1,0 +1,21 @@
+.maps
+{
+    width: 50%;
+    margin: auto;
+    border: 2px solid black;
+}
+.maps h1
+{
+    color: red;
+    text-align: center;
+}
+.maps h2
+{
+    color: blue;
+    text-align: center;
+}
+.maps iframe
+{
+    border: 0;
+    padding: 30px;
+}

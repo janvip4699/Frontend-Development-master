@@ -1,0 +1,20 @@
+{
+  "add-data": [
+    {
+      "name": "jp",
+      "email": "jp@gmail.com",
+      "phone": "1234567890",
+      "address": "jp",
+      "pincode": "360004",
+      "id": "6122"
+    },
+    {
+      "id": "c75b",
+      "name": "Prisha",
+      "email": "prisha10@gmail.com",
+      "phone": "1234567890",
+      "address": "Pune",
+      "pincode": "411057"
+    }
+  ]
+}

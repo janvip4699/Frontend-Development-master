@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='main.js'></script>
+</head>
+<body>
+    <!-- Main division part -->
+    <div class="div1">
+
+        <p class="p1">CONTACT US</p>
+        
+        <hr/>
+        <br/>
+
+        <!-- First section part -->
+        <section id="address-section">
+
+            <!-- Address part -->
+            <div class="add1">
+                <p id="para">ADDRESS :</p>
+                <p id="para">Saint Marco Street, 6th</p>
+                <p id="para">floor,Tokyo,Japan,123456.
+            </div>
+
+            <div class="add2">
+                <i class="fa fa-phone"></i><span class="phone">  +91 1234567890</span>
+                <br/>
+                <i class="fa fa-envelope"></i><span class="email">example@gmail.com</span>            
+            </div>
+                
+            <div class="add3">
+                <br/><br/>
+                <i class="fa-solid fa-location-dot"></i>
+            </div>
+           
+        </section>
+
+        <br/><br/>
+
+        <!-- Second section part -->
+        <section id="form-section">
+
+            <div class="frm1">
+                <!-- Form part -->
+                <form method="post">
+
+                    <input type="text" name="name" placeholder="Name :" required pattern="[A-Za-z]{3,6}" maxlength="6"/>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <!-- Name validation : It accepts only alphabets and minimum of 3 letters and maximum of 6 letters only -->
+
+                    <input type="text" name="company" placeholder="Company :" required/>
+                    <br/><br/>
+
+                    <input type="email" name="email" placeholder="Email :" required/>&nbsp;&nbsp;&nbsp;&nbsp;
+
+                    <input type="phone" name="phone" placeholder="Mobile :" required pattern="[0-9]{10}"/>
+                    <br/><br/>
+                    <!-- Mobile No Validation : It accepts only numbers and only 10 digits allowed -->
+
+                    <textarea rows="5" cols="56" placeholder="Message :" required></textarea>
+                    <br/><br/>
+
+                    <!-- All fields are required, If any of the field is empty then form can't be submitted -->
+                    <input type="submit" name="send" value="Send"/>
+
+                </form>
+            </div>
+
+            <div class="frm2">
+
+                <!-- Google map of address -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.468397371064!2d-0.13348162405806197!3d51.522968209566784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b2e05fa84a1%3A0x35223832b9a7517a!2sUniversity%20of%20London!5e0!3m2!1sen!2sin!4v1703707970642!5m2!1sen!2sin" width="450" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                <br/>
+
+                <!-- Social media icons -->
+                <a href="https://www.facebook.com/" class="fa fa-facebook"></a>&nbsp;&nbsp;
+                <a href="https://twitter.com/login" class="fa fa-twitter"></a>&nbsp;&nbsp;
+                <a href="https://in.linkedin.com/" class="fa fa-linkedin"></a>&nbsp;&nbsp;
+                <a href="https://github.com/" class="fa fa-github"></a>
+            </div>
+
+        </section>
+    </div>
+
+</body>
+</html>

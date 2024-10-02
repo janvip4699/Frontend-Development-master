@@ -1,0 +1,15 @@
+.list-background
+{
+    background-color: lightgreen;
+    width: 45%;
+    margin: auto;
+    margin-top: 5%;
+    padding: 15px;
+}
+.bi-check
+{
+    font-size: 50px;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    opacity: 0.5;
+}

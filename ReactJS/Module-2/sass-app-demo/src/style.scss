@@ -1,0 +1,31 @@
+$bg-success: green;
+$bg-danger: red;
+$text-success: green;
+$text-white: white;
+$bg-dark: black;
+$container : 80%;
+$container-fluid: 100%;
+$margin: auto;
+$padding: auto;
+$bg-lightgray: gray;
+$text-center: center;
+$text-padding: 25px;
+$top-margin: 5%;
+
+body
+{
+    margin: $margin;
+    padding: $padding;
+    background-color: $bg-lightgray;
+}
+.sassapp
+{
+    width: $container;
+    margin: $margin;
+    height: auto;
+    background-color: $bg-dark;
+    padding: $text-padding;
+    text-align: $text-center;
+    color: $text-white;
+    margin-top: $top-margin;
+}

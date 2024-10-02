@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    
+</head>
+<body>
+   <h2>onmouseleave Event</h2>
+   <p>Move the mouse pointer onto the image and leave out from it to see mouseleave event!</p>
+   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuRkBcvkWBvuM77i3SzI0IZd-NCKWWDiGj_HA-9nZsbA&s" onmouseleave="mouseLeave()" id="ml" style="width: 500px; height: 500px;">
+   <script>
+        function mouseLeave()
+        {
+            document.getElementById("ml").style.width="300px";
+            document.getElementById("ml").style.height="300px";
+            alert("You leaved from the image!!");
+        }
+   </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+
+<!-- How to create a Hyperlink in HTML? With Example. 
+
+HTML links are hyperlinks and links allow us to redirect from one page to another.
+
+<a> tag defines a hyperlink.
+
+href attribute of the anchor tag defines the link's destination. It is very important to give this attribute.
+
+target attribute specifies where to open the linked page.
+It has following values
+_self - By default, it opens in the same window or tab.
+_blank - it opens in a new window.
+_parent - it opens in the parent frame.
+_top - it opens in the full body of the window.
+
+You can use an image as a link by putting <img> tag inside the <a> tag.
+
+<a href="url">Link text</a>
+Link text will be visible to the user and by clicking on url it will send to the specified URL address.
+
+By default, 
+An unvisited link is underlined and blue.
+A visited link is underlined and purple.
+An active link is underlined and red.
+ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <h1>12. How to create a Hyperlink in HTML? With Example. </h1>
+    <h3>HTML Links</h3>
+    <a href="https://www.amazon.in/">Click here to go to Amazon website</a><br><br>
+    <h2>target attribute</h2>
+    <h3>If target="_blank", the link will open in a new browser window or tab.</h3>
+    <a href="https://www.amazon.in/" target="_blank">Click here</a><br><br>
+    <h2>Image as a link</h2>
+    <h3>The image below is a link, click on it.</h3>
+    <a href="https://www.amazon.in/"><img src="Images/natural4.jpg" alt="Image as Link" style="width:50px;height:50px;"></a>
+</body>
+</html>

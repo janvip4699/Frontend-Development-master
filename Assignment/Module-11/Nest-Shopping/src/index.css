@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.back-color
+{
+    background-color: #3bb77e;
+}
+.border-color
+{
+    border-color: #3bb77e;
+}
+.text-color
+{
+     color: #3bb77e;
+}

@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.header
+{
+    background-image: url('./assets/images/banner-1.jpg'); 
+    background-size: cover; /* Cover the entire header */ 
+    background-position: center; /* Center the background image */ 
+    height: 700px; /* Set the height of the header */ 
+    text-align: center; /* Center the text horizontally */ 
+    padding: 20px; /* Add padding inside the header */ 
+}
+
+.header-links li
+{
+    display: inline-block;
+    margin: 8px;
+}
+.header-links a
+{
+    text-decoration: none;
+    list-style-type: none;
+    color: white;
+    font-size: 13px;
+}

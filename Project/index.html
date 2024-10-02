@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Auto Portal</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+    <script src='https://code.jquery.com/jquery-3.7.1.min.js'></script>
+    <script src="https://malsup.github.io/jquery.cycle.all.js"></script>
+    <script src='main.js'></script>
+    <script>
+        $(document).ready(function(){
+          $("#slide").cycle("turnLeft,shuffle");
+        });
+    </script>
+</head>
+<body>
+    <!-- Header section -->
+    <section id="auto-portal-header">
+
+        <!-- Logo image -->
+        <div class="logo">
+            <img src="images/logo.png" width="150px" height="50px">
+        </div>
+        
+        <!-- Search bar -->
+        <div class="search-bar">
+            <input type="search" name="search-bar" placeholder="Search Vehicles"/>
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </div>
+
+        <!-- Login/Refister links -->
+        <div class="account">
+            <i class="fa fa-user"></i>&nbsp;
+            <a href="login.html">Login</a> /
+            <a href="register.html">Register</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <i class="fa fa-shopping-cart"></i>
+        </div>
+        
+    </section>
+
+    <!-- Navbar section -->
+    <section id="auto-portal-navbar">
+        
+        <!-- Navigation menu -->
+        <div class="nav">
+            <ul>
+                <li>NEW VEHICLES</li>
+                <li>BUY VEHICLES</li>
+                <li>SELL VEHICLES</li>
+                <li>OUR SERVICES</li>
+                <li>PHOTOS & VIDEOS</li>
+                <li>REVIEWS</li>
+            </ul>
+        </div>
+
+        <!-- Dropdown of cities -->
+        <div class="select-city">
+            <i class="fa fa-location-dot"></i>
+            <!-- <label for="city">Select City</label> -->
+            <select name="city" id="city">
+                <option value="rajkot">Select City</option>
+                <option value="rajkot">Rajkot</option>
+                <option value="ahemdabad">Ahemdabad</option>
+                <option value="mumbai">Mumbai</option>
+                <option value="pune">Pune</option>
+            </select>
+        </div>
+
+    </section>
+
+    <!-- Slider section -->
+    <section id="auto-portal-slider">
+
+        <!-- Image slider -->
+        <div class="auto-sliders" id="slide">
+            <img src="images/car1.jpg">
+            <img src="images/car5.jpg">
+            <img src="images/car2.jpg">
+            <img src="images/car3.jpg">
+            <img src="images/car4.jpg">
+        </div>
+
+    </section>
+
+    <!-- Content section -->
+    <section id="auto-portal-content">
+
+        <!-- Sidebar content -->
+        <div class="left-sidebar-content">
+            <ul>
+                <a href="#"><li>The most searched cars</li></a>
+                <a href="#"><li>Latest Cars</li></a>
+                <a href="#"><li>Upcoming Cars</li></a>
+                <a href="#"><li>Electric Cars</li></a>
+                <a href="#"><li>Newly Launched! Car Services</li></a>
+                <a href="#"><li>Trusted used cars by budget</li></a>
+                <a href="#"><li>Popular Brands</li></a>
+            </ul>
+        </div>
+
+        <!-- Main content -->
+        <div class="right-sidebar-content">
+            <h1>Latest Cars</h1>
+
+            &nbsp;&nbsp;
+
+            <!-- Car 1 Details -->
+            <div class="car1">
+                <img src="images/latest_car1.jpg" width="250px" height="200px">
+                <p>Land Rover Range Rover Sport</p>
+                <span>&#8377; 1.69 - 2.80 Cr*</span><br/><br/>
+                <button type="submit">Check Offers</button>
+            </div>
+
+            &nbsp;&nbsp;
+
+            <!-- Car 2 Details -->
+            <div class="car1">
+                <img src="images/latest_car2.jpg" width="250px" height="200px">
+                <p>Lamborghini Revuelto</p>
+                <span>&#8377; 8.89 Cr*</span><br/><br/>
+                <button type="submit">Check Offers</button>
+            </div>
+            
+            &nbsp;&nbsp;
+
+            <!-- Car 3 Details -->
+            <div class="car1">
+                <img src="images/latest_car3.jpg" width="250px" height="200px">
+                <p>Audi Q3</p>
+                <span>&#8377; 42.77 - 51.94 Lakh*</span><br/><br/>
+                <button type="submit">Check Offers</button>
+            </div>
+        </div>
+
+    </section>
+
+    <div class="clearfix"></div>
+
+    <!-- Footer section -->
+    <section id="auto-portal-footer">
+
+        <!-- Footer links -->
+        <div class="about">
+            <ul>
+                <li>ABOUT AUTO PORTAL</li>
+                <li>About</li>
+                <li>Terms & Conditions</li>
+                <li>Privacy Policy</li>
+                <li>FAQs</li>
+            </ul>
+        </div>
+
+        <!-- Connect us  -->
+        <div class="connect-us">
+            <ul>
+                <li>CONNECT WITH US</li>
+                <li>Feedback</li>
+                <li>Contact Us</li>
+            </ul>
+        </div>
+
+        <!-- Others -->
+        <div class="others">
+            <ul>
+                <li>OTHERS</li>
+                <li>Personal loan</li>
+                <li>Insurance</li>
+            </ul>
+        </div>
+        
+        <!-- Social-media -->
+        <div class="social-media">
+            <ul> 
+                <li>Connect:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.facebook.com/"><span class="fa fa-facebook"></span></a></li>
+                <li><a href="https://www.twitter.com/"><span class="fa fa-twitter"></span></a></li>
+                <li><a href="https://www.youtube.com/"><span class="fa fa-youtube-play"></span></a></li>
+                <li><a href="https://www.instagram.com/"><span class="fa fa-instagram"></span></a></li>
+                <li><a href="https://www.linkedin.com/"><span class="fa fa-linkedin"></span></a></li>
+            </ul>
+        </div>
+
+    </section>
+</body>
+</html>

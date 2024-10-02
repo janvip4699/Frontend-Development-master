@@ -1,0 +1,50 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+.nav
+{
+    margin: 0;
+    width: 100%;
+    height: auto;
+}
+.nav-links
+{
+    margin-left: 15%;
+}
+.nav-links li
+{
+    display: inline-block;
+    padding: 5px 25px;
+}
+.nav-links a
+{
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+}
+.sidebar-links li
+{
+    display: block;
+    padding: 10px 20px;
+}
+.sidebar-links a
+{
+    text-decoration: none;
+    color: black;
+    list-style-type: none;
+}
+.footer-links li
+{
+    display: block;
+    padding: 0px 5px;
+}
+.footer-links a
+{
+    text-decoration: none;
+    list-style-type: none;
+    color: white;
+}

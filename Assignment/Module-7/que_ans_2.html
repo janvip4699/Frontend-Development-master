@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='https://code.jquery.com/jquery-3.7.1.min.js'></script>
+    <script src='main.js'></script>
+    <script>
+        $(document).ready(function(){
+            $("button   ").css({"padding":"10px","background-color":"lightgrey","font-size":"20px"});
+            $("#btn").click(function(){
+                $("h3").css({"width":"20%","height":"auto","background-color":"lightblue","color":"blue","padding":"20px","text-align":"center","margin":"auto"});
+                $(".ex").css({"width":"50%","height":"auto","margin":"auto","padding":"15px","background-color":"lightgreen","color":"black"});
+            });
+            $("#add_class").click(function(){
+                $("div").addClass("content");
+            });
+            $("#remove_class").click(function(){
+                $("div").removeClass("cont2");
+            });
+        });
+    </script>
+    <style>
+        .content 
+        {
+            width: 30%;
+            height: auto;
+            margin: auto;
+            background-color: coral;
+            color: white;
+            padding: 15px;
+            margin-top: 5%;
+        }
+        .cont2
+        {
+            width: 30%;
+            height: auto;
+            margin: auto;
+            background-color: lightblue;
+            padding: 15px;
+            margin-top: 5%;
+        }
+    </style>
+</head>
+<body>
+    <h1>2. How to Apply CSS Using JQuery, How to Add Class and Remove Class in Jquery, JQuery Animation?</h1>
+    <hr>
+    <p>Using css() method, you can apply css effects to selected elements.</p>
+    <button id="btn">Click here to apply css on elements !!</button>
+    <h3>Hello Janvi !!</h3>
+    <p class="ex">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quaerat aut iste obcaecati eaque fuga nulla nam, doloribus illo vel exercitationem! Repudiandae iste eius tenetur corporis recusandae? Velit, laudantium ad!</p>
+    <br>
+    <button id="add_class">Click here to add class to the elements !!</button>
+    <div>
+        <h4>Janvi !!!!</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia repellendus exercitationem, aliquid accusantium error, facere praesentium laudantium cum consequatur ducimus id blanditiis, nulla minima! Nostrum ad itaque optio quas neque?</p>
+    </div>
+    <br>
+    <button id="remove_class">Click here to remove class to the elements !!</button>
+    <div class="cont2">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa cumque laborum quis quas dolorum doloremque necessitatibus doloribus earum sequi nostrum quae consequuntur, assumenda nemo provident, adipisci fuga iusto unde vero!</p>
+    </div>
+</body>
+</html>

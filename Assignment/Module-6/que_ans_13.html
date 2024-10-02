@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <h1>13. What is the function of the delete operator?</h1>
+    <hr>
+    <p>The delete operator of js removes a property from an object. It does not take any parameters & it returns true if it removes a property.</p>
+    <script>
+        let emp = {
+            firstName: "Raj",
+            lastName: "Tank",
+            salary: 50000
+        }
+        document.write(delete emp.salary);
+        document.write(emp);
+    </script>
+    <p>It returned true because delete operator successfully attempts to delete the third property.</p>
+</body>
+</html>

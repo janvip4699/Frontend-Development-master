@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        body
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            overflow-x: hidden;
+            background-color: lightgray;
+            color: white;
+        }
+        .box1
+        {
+            background-color: cadetblue;
+            width: 250px;
+            height: 250px;
+            margin: 50px;
+        }
+        .box2
+        {
+            background-color: orangered;
+            width: 250px;
+            height: 250px;
+            margin: 50px;
+            position: absolute;
+            z-index: 2;
+            margin-top: -18%;
+            margin-left: 8%;
+        }
+        .box3
+        {
+            background-color: purple;
+            width: 250px;
+            height: 250px;
+            margin: 50px;
+            position: absolute;
+            z-index: 3;
+            margin-top: -13%;
+            margin-left: 13%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Define z-index ? create examples as look like this examples using z-index. -->
+    <!-- z-index is the property of css that overlaps the elements -->
+
+    <div class="box1">Box-1</div>
+    <div class="box2">Box-2</div>
+    <div class="box3">Box-3</div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    
+</head>
+<body>
+   <h2>onmouseup Event</h2>
+   <p id="md" onmouseup="mouseUp()" onmousedown="mouseDown()">Clock the text!</p>
+   <p>When mouse is down then text color will be red and when up it will be blue</p>
+   <script>
+        function mouseUp()
+        {
+            document.getElementById("md").style.color="blue";
+        }
+        function mouseDown()
+        {
+            document.getElementById("md").style.color="red";
+        }
+   </script>
+</body>
+</html>

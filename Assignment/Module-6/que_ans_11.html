@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <h1>11. What are all the looping structures in JavaScript?</h1>
+    <p>Javascript supports different kinds of loops :</p>
+    <p>The For Loop : The for loop has 3 optional expressions :</p>
+    <p>syntax : for (expression 1; expression 2; expression 3) 
+                {
+                    // code block to be executed
+                }
+    </p>
+    <p>Expression 1 is executed one time before the execution of the code block. Expression 2 defines the condition for executing the code block. Expression 3 is executed every time after the code block has been executed.</p>
+    <p id="demo"></p>
+    <script>
+        let text="";
+        for(let i=0; i<=5; i++)
+        {
+            text+=i+"<br>";
+        }
+        document.getElementById("demo").innerHTML=text;
+    </script>
+    <br>
+    <p>The For In Loop : The for in loop loops through the properties of an object.</p>
+    <p>syntax : for (key in object) 
+                {
+                    // code block to be executed
+                }
+    </p>
+    <p id="demo1"></p>
+    <script>
+        const person = {fname:"Janvi", lname:"Parmar", age:24};
+        let txt="";
+        for(let x in person)
+        {
+            txt += person[x] + " ";
+        }
+        document.getElementById("demo1").innerHTML= txt;
+    </script>
+    <p>In above example, The for in loop iterates over a person object, each iteration returns a key(x), The key is used to access the value of the key, The value of the key is person(x).</p>
+    <br>
+    <p>The For Of Loop : The for of loop loops through the values of an iterable object. It lets you loop over iterable data strctures such as arrays, strings, maps, nodelists and more.</p>
+    <p>syntax : for (variable of iterable)
+                {
+                    //code block to be executed
+                }
+    </p>
+    <p id="demo2"></p>
+    <script>
+        let tx="";
+        const cars=["Jaguar","Audi","BMW"];
+        for (let i of cars)
+        {
+            tx+=i+ " ";
+        }
+        document.getElementById("demo2").innerHTML=tx;
+    </script>
+    <br>
+    <p>The While Loop : The while loop loops through a block of code as long as a specified condition is true.</p>
+    <p>syntax : while(condition)
+                {
+                    //code block to be executed
+                }
+    </p>
+    <p id="demo3"></p>
+    <script>
+        let tt = "";
+        let i = 0;
+        while (i < 10) {
+        tt += "<br>The number is " + i;
+        i++;
+        }
+        document.getElementById("demo3").innerHTML = tt;
+    </script>
+    <br>
+    <p>The Do While Loop : The do while loop is a variant of the while loop. This will execute the code block once, before checking it the condition is true, then it will repeat the loop as long as the condition is true.</p>
+    <p>syntax : do
+                {
+                    //code block to be executed
+                }
+                while(condition);
+    </p>
+    <p id="demo4"></p>
+    <script>
+        let te = "";
+        let i = 0;
+
+        do {
+        te += "<br>The number is " + i;
+        i++;
+        }
+        while (i < 5);  
+
+        document.getElementById("demo4").innerHTML = te;
+    </script>
+</body>
+</html>
