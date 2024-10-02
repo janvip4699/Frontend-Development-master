@@ -1,12 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import logo from '../assets/images/logo.png'
-import { Link, Navigate, useNavigate } from 'react-router-dom'
-import { FaRegUserCircle } from "react-icons/fa";
-import { SlLocationPin } from "react-icons/sl";
-import Register from './Register';
-import { Modal } from 'react-modal';
+import { Link, useNavigate } from 'react-router-dom'
 import { useUserAuth } from '../Context/UserAuthContext';
 import axios from 'axios';
+
 const Header = () => {
 
   const { logOut, user } = useUserAuth();

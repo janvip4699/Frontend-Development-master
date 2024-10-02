@@ -12,6 +12,7 @@ import Register from './components/Register'
 import UserHomePage from './components/UserHomePage'
 import { UserAuthContextProvider } from './Context/UserAuthContext'
 import ContactUs from './components/ContactUs'
+import UserCarDetails from './components/UserCarDetails'
 
 import Layout from './components/Admin/Layout'
 import Dashboard from './components/Admin/Dashboard'
@@ -46,6 +47,7 @@ export default function App() {
           <Route path="/user-home-page" element={<UserHomePage />}></Route>
           <Route path="/contact-us" element={<ContactUs />}></Route>
           <Route path="/about" element={<About />}></Route>
+          <Route path="/user-car-details" element={<UserCarDetails />}></Route>
 
           {/* Admin Routing */}
           <Route path="/admin" element={<Layout />}></Route>

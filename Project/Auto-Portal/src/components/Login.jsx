@@ -5,11 +5,11 @@ import { useUserAuth } from "../Context/UserAuthContext";
 
 const Login = (props) => {
   const { logIn } = useUserAuth();
-  const [error,setError]=useState();
-  
+  const [error, setError] = useState();
+
   const navigate = useNavigate();
   const Email = useRef("");
-    const Password = useRef("");
+  const Password = useRef("");
   const LoginUSer = async (e) => {
     e.preventDefault();
     setError("");
@@ -40,7 +40,7 @@ const Login = (props) => {
 
               <div className="w-[90%] md:w-[full] md:mx-4 mx-auto p-4 bg-white/80 mb-10 md:mt-10  text-black rounded-2xl shadow-2xl">
                 <div>
-                {error && <div className="bg-red-500 " variant="danger">{error}</div>}
+                  {error && <div className="bg-red-500 " variant="danger">{error}</div>}
                   <h1 className="text-4xl text-center font-semibold mb-5 text-adminprimary">
                     Log-In
                   </h1>
@@ -75,7 +75,7 @@ const Login = (props) => {
                       </div>
                       <div className="text-center">
                         <span className="">
-                        Don't have account?
+                          Don't have account?
                           <Link
                             to="/register"
                             className="text-xl ms-2 text-primary font-bold"

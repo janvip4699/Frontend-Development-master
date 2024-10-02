@@ -1,5 +1,9 @@
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
+import Technologies from './components/Technologies'
+import Projects from './components/Projects'
+import Experience from './components/Experience'
+import Contact from './components/Contact'
 
 function App() {
 
@@ -17,6 +21,10 @@ function App() {
         <div className='container mx-auto px-8'>
           <Navbar/>
           <Hero/>
+          <Technologies/>
+          <Projects/>
+          <Experience/>
+          <Contact/>
         </div>
       </div>
     </>

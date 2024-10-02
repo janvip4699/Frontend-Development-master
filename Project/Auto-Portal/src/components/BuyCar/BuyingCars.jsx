@@ -7,6 +7,7 @@ import axios from 'axios';
 const BuyingCars = () => {
     //search method will be here
     const [cardata, setcarData] = useState();
+    const [filtercarData, setfiltercarData] = useState(cardata);
     // const [searchcarData, setsearchcarData] = useState();
     
     const Navigate = useNavigate();
@@ -16,20 +17,19 @@ const BuyingCars = () => {
             setcarData(response.data);
             setfiltercarData(response.data);
         })
-    }, [cardata]);
-    const [filtercarData, setfiltercarData] = useState(cardata);
+    }, []);
 
-    const handleSearch = (Cityvalue) => {
+    const handleSearch = (Cityvalue, Makevalue) => {
         // const value = event.target.value;
         // setsearchcarData(value);
 
         const filter = cardata.filter((car) => {
             const matchCity = car.city.toLowerCase().includes(Cityvalue.toLowerCase());
-            
-            //console.log(matchCity)
-            return matchCity;
+            const matchMake = car.make.toLowerCase().includes(Makevalue.toLowerCase());
+            // console.log(matchCity)
+            return matchCity && matchMake;
         })
-       // console.log(filter)
+    //    console.log(filter)
         setfiltercarData(filter);
     }
 

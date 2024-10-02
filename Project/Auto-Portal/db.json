@@ -1,8 +1,20 @@
 {
   "sell-car": [
     {
-      "id": "97e0",
+      "id": "71d4",
       "city": "Rajkot",
+      "make": "Tata",
+      "model": "Harrier",
+      "fuel": "Petrol",
+      "color": "Black",
+      "km": "2000",
+      "owner": "First owner",
+      "price": "20 Lakh",
+      "imgs": "https://imgd.aeplcdn.com/1280x720/n/cw/ec/1/versions/tata-harrier-2021-xz-plus-dark-edition1645784748224.jpg?q=80"
+    },
+    {
+      "id": "7bb3",
+      "city": "Ahemdabad",
       "make": "Tata",
       "model": "Tiago",
       "fuel": "Others",
@@ -10,18 +22,66 @@
       "km": "1000",
       "owner": "First owner",
       "price": "11 Lakh",
+      "imgs": "https://imgd-ct.aeplcdn.com/664x415/n/c1hbmbb_1688469.jpg?q=80"
+    },
+    {
+      "id": "00c3",
+      "city": "Rajkot",
+      "make": "Tata",
+      "model": "Nexon",
+      "fuel": "Petrol",
+      "color": "Blue",
+      "km": "3000",
+      "owner": "Four or more owners",
+      "price": "16 Lakh",
+      "imgs": "https://imgd-ct.aeplcdn.com/664x415/n/c1hbmbb_1688469.jpg?q=80"
+    },
+    {
+      "id": "1997",
+      "city": "Rajkot",
+      "make": "Hyundai",
+      "model": "Creta",
+      "fuel": "Diesel",
+      "color": "Grey",
+      "km": "1500",
+      "owner": "Second owner",
+      "price": "11 Lakh",
+      "imgs": "https://imgd.aeplcdn.com/370x208/n/oqevvab_1673975.jpg?q=80"
+    },
+    {
+      "id": "a975",
+      "city": "Mumbai",
+      "make": "Audi",
+      "model": "Tiago",
+      "fuel": "Diesel",
+      "color": "Blue",
+      "km": "2000",
+      "owner": "First owner",
+      "price": "10 Lakh",
+      "imgs": "https://imgd-ct.aeplcdn.com/1056x660/n/4x5alcb_1713653.jpg?q=80"
+    },
+    {
+      "id": "48a5",
+      "city": "Pune",
+      "make": "Tata",
+      "model": "Tiago",
+      "fuel": "Others",
+      "color": "Grey",
+      "km": "1500",
+      "owner": "First owner",
+      "price": "11 Lakh",
       "imgs": "https://imgd.aeplcdn.com/664x374/n/cw/ec/175993/kushaq-exterior-right-front-three-quarter.jpeg?isig=0&q=80"
     },
     {
-      "id": "8e6e",
+      "id": "7095",
       "city": "Ahemdabad",
-      "make": "MG",
-      "model": "Harrier",
-      "fuel": "Petrol",
-      "color": "Black",
-      "km": "1000",
-      "owner": "First owner",
-      "price": "16 Lakh",
+      "make": "Tata",
+      "model": "Nexon",
+      "fuel": "Diesel",
+      "color": "Purple",
+      "km": "3000",
+      "owner": "Second owner",
+      "price": "10 Lakh",
       "imgs": "https://imgd-ct.aeplcdn.com/1056x660/n/4x5alcb_1713653.jpg?q=80"
     }
   ],
