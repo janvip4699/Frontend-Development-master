@@ -3,7 +3,7 @@ import about from '../assets/images/slider3.webp'
 
 const AboutUs = () => {
     return (
-        <div className='container pt-20'>
+        <div className='container pt-10'>
             <div>
                 <h1 className='font-bold text-4xl px-12'>About <span className='text-primary'>US</span></h1>
                 <div className='flex flex-col-reverse justify-center md:flex-row items-center gap-5 mt-14'>

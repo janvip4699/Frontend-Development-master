@@ -36,17 +36,20 @@ export default function Register(props) {
         setError("")
 
         try {
-           await signUp(Email.current.value, Password.current.value);
-           var UserDetails = {
-            UserName: UserName.current.value,
-            Email: Email.current.value,
-            Password: Password.current.value,
-            Role: "user",
-            ProfileImage: ProfileImage.current.value,
-        };
+            const { user } = await signUp(Email.current.value, Password.current.value);
+            var UserDetails = {
+                UserName: UserName.current.value,
+                Email: Email.current.value,
+                Password: Password.current.value,
+                Role: "user",
+                ProfileImage: ProfileImage.current.value,
+                UID: user.uid,
+                IsBuyer: false,
+                IsSeller: false,
+            };
 
             axios.post(`http://localhost:4000/users`, UserDetails).then(() => {
-                
+
                 Swal.fire({
                     title: "Registered successfully!!",
                     showClass: {
@@ -68,20 +71,12 @@ export default function Register(props) {
                 e.target.reset();
             });
         }
-        catch(err)
-        {
+        catch (err) {
             setError(err.message);
         }
     };
     return (
         <div>
-            {/* <div
-                {...props}
-                className={`absolute backdrop-blur-lg pt-24${props.isOpen
-                    ? "top-0 opacity-100 z-[1030] duration-700"
-                    : "-top-[100%] opacity-0 -z-[1030] duration-700"
-                    } transition-all duration-700`}
-            ></div> */}
             <div className=" mt-14 md:w-[70%] w-[95%] flex items-center  bg-primary md:mx-56 mx-auto rounded-2xl ">
                 <div className="min-h-[500px] md:min-h-[200px] rounded">
                     <div className="w-full">
@@ -91,22 +86,8 @@ export default function Register(props) {
                             </div>
                             {/*Sign Up Form */}
                             <div>
-                                {/* <div
-                                
-                                    className={`px-5 w-[80%] mx-auto text-center bg-yellow-100 border border-primary text-adminprimary rounded-md p-1 ${Message ? "opacity-100" : "opacity-0"
-                                        } duration-700 transition-all`}
-                                >
-                                    <div className="">You Are Registerd Successfully!</div>
-                                </div> */}
                                 {error && <div className="bg-red-500 " variant="danger">{error}</div>}
 
-
-
-                                {/* <IoIosCloseCircleOutline
-                                    size={30}
-                                    className="cursor-pointer md:-translate-y-[30px] -translate-y-[300px] translate-x-[630px] md:translate-x-[490px] "
-                                    onClick={props.onHide}
-                                /> */}
                                 <div className="w-[90%] md:w-[full] md:mx-4 mx-auto p-4 bg-white/80 mb-10 md:mt-10  text-black rounded-2xl shadow-2xl">
                                     <div>
                                         <h1 className="text-4xl text-center font-semibold mb-5 text-adminprimary">
@@ -114,9 +95,7 @@ export default function Register(props) {
                                         </h1>
                                         <form action="" onSubmit={RegisterUser}>
                                             <div className="space-y-6 flex-col justify-center items-center">
-                                                {/* user Image Upload  */}
                                                 <div
-                                                    // onClick={handleImageClick}
                                                     className="flex-col justify-center items-center mx-auto"
                                                 >
                                                     <input

@@ -3,8 +3,24 @@ import { CiSearch } from "react-icons/ci";
 import { FaBell } from "react-icons/fa";
 import { FaEnvelope } from "react-icons/fa";
 import AdminPhoto from "../../assets/images/janvi.jpeg"
+import { useUserAuth } from '../../Context/UserAuthContext';
+import { useNavigate } from 'react-router-dom';
 
 const Header = () => {
+
+    const { logOut, user } = useUserAuth();
+    const Navigate = useNavigate();
+
+    const handleLogout = async () => {
+        try {
+          await logOut();
+          Navigate("/admin");
+        }
+        catch (error) {
+          console.log(error.message);
+        }
+      };
+      
     return (
         <div>
             <div className='container bg-primary p-4 rounded-lg m-2 flex items-center justify-between'>
@@ -27,9 +43,6 @@ const Header = () => {
                     </div>
                 </div>
                 <div className="flex items-center gap-8 ">
-                    <div className="flex items-center border-r-[1px] border-secondary pr-[25px] gap-8">
-                        <FaBell className="cursor-pointer text-secondary" size={30}/>
-                    </div>
 
                     <div className="flex items-center gap-4">
                         <p className='text-xl text-secondary font-bold'>Janvi Parmar</p>
@@ -37,7 +50,7 @@ const Header = () => {
                             <img src={AdminPhoto} alt="" className='rounded-full'/>
                         </div>
                         <div>
-                            <button type="button" className='border-2 border-secondary text-secondary text-lg font-bold p-2 rounded-md hover:bg-secondary hover:text-primary'>Logout</button>
+                            <button type="button" className='border-2 border-secondary text-secondary text-lg font-bold p-2 rounded-md hover:bg-secondary hover:text-primary' onClick={handleLogout}>Logout</button>
                         </div>
                     </div>
                 </div>

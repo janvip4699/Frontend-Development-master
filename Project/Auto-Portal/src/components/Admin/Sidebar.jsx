@@ -14,16 +14,16 @@ const Sidebar = () => {
           <ul className='list-none flex-col gap-10 mt-12 text-md'>
             <Link to="/admin"><li className='rounded-md p-2 my-5 transition-all duration-300 ease-in-out hover:bg-primary/45 flex gap-5 items-center'>Home</li></Link>
             <Link to="/admin/users"><li className='rounded-md p-2 my-5 transition-all duration-300 ease-in-out hover:bg-primary/45 flex gap-5 items-center'>Users</li></Link>
-            <Link to="/admin/dashboard"><li className='rounded-md p-2 my-5 transition-all duration-300 ease-in-out hover:bg-primary/45 flex gap-5 items-center'>Buyers</li></Link>
-            <Link to="/admin/sellers/sell-cars-list"><li className='rounded-md p-2 my-5 transition-all duration-300 ease-in-out hover:bg-primary/45 flex gap-5 items-center'>Sellers</li></Link>
+            <Link to="/admin/sellers/sell-cars-list"><li className='rounded-md p-2 my-5 transition-all duration-300 ease-in-out hover:bg-primary/45 flex gap-5 items-center'>Sell Cars List</li></Link>
             <div className='group'>
-              <Link to="/admin/cars"><li className='rounded-md p-2 my-5 transition-all duration-300 ease-in-out hover:bg-primary/45 flex gap-5 items-center relative' onClick={handlesubMenu}>Cars</li></Link>
+              <Link to="/admin/cars/add-car-make"><li className='rounded-md p-2 my-5 transition-all duration-300 ease-in-out hover:bg-primary/45 flex gap-5 items-center relative' onClick={handlesubMenu}>Cars</li></Link>
               <ul className={`list-none flex-col text-sm hidden group-hover:block`}>
                 <Link to="/admin/cars/add-car-make"><li className='rounded-md p-1 my-2 transition-all duration-300 ease-in-out hover:bg-primary/45 flex gap-5 ms-5'>Add Car Make</li></Link>
                 <Link to="/admin/cars/add-car-model"><li className='rounded-md p-1 my-2 transition-all duration-300 ease-in-out hover:bg-primary/45 flex gap-5 ms-5'>Add Car Model</li></Link>
               </ul>
             </div>
             <Link to="/admin/locations"><li className='rounded-md p-2 my-5 transition-all duration-300 ease-in-out hover:bg-primary/45 flex gap-5 items-center'>Locations</li></Link>
+            <Link to="/admin/contacts"><li className='rounded-md p-2 my-5 transition-all duration-300 ease-in-out hover:bg-primary/45 flex gap-5 items-center'>Contacts</li></Link>
 
           </ul>
         </div>

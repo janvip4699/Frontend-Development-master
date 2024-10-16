@@ -2,26 +2,27 @@ import React from 'react'
 import ContactForm from './ContactForm'
 import { Link } from 'react-router-dom'
 import Header from './Header'
+import Footer from './Footer'
 
 const ContactUs = () => {
     return (
         <div>
             <Header></Header>
-        <div className='container pt-20 pb-20'>
-                <h1 className='font-bold text-4xl px-12'>Contact <span className='text-primary'>US</span></h1>
-                <div className='flex flex-col-reverse justify-center md:flex-row gap-5 mt-14'>
+        <div className='container pt-5'>
+                <h1 className='font-bold text-3xl px-12'>Contact <span className='text-primary'>US</span></h1>
+                <div className='flex flex-col-reverse justify-center md:flex-row gap-5 mt-5'>
                     {/* content section */}
-                    <div className='w-full md:w-2/4  space-y-10'>
+                    <div className='w-full md:w-2/4  space-y-5'>
                         <div>
-                            <h1 className='text-xl font-bold'>CALL US :</h1>
+                            <h1 className='text-lg font-bold'>CALL US :</h1>
                             <Link><p className='text-sm text-primary'> 1800 209 6006</p></Link>
                         </div>
                         <div>
-                            <h1 className='text-xl font-bold'>EMAIL US :</h1>
+                            <h1 className='text-lg font-bold'>EMAIL US :</h1>
                             <Link><p className='text-sm text-primary'>autoportal@gmail.com</p></Link>
                         </div>
                         <div>
-                            <h1 className='text-xl font-bold'>Corporate Office Address :</h1>
+                            <h1 className='text-lg font-bold'>Corporate Office Address :</h1>
                             <p className='text-sm'>Auto Portal Private Limited</p>
                             <p className='text-sm'>Tower B, 4th Floor, Pride Sapphire,</p>
                             <p className='text-sm'>Near Amin Marg, Rajkot, Gujarat 360001</p>
@@ -46,6 +47,7 @@ const ContactUs = () => {
                     </div>
                 </div>
             </div>
+            <Footer></Footer>
         </div>
     )
 }

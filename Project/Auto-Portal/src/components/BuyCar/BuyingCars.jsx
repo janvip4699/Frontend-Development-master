@@ -14,8 +14,8 @@ const BuyingCars = () => {
 
     useEffect(() => {
         axios.get("http://localhost:4000/sell-car").then((response) => {
-            setcarData(response.data);
-            setfiltercarData(response.data);
+            setcarData(response.data.filter((e)=>e.status.toLowerCase().includes("available")));
+            setfiltercarData(response.data.filter((e)=>e.status.toLowerCase().includes("available")));
         })
     }, []);
 

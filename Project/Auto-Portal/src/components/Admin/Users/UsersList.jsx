@@ -42,11 +42,11 @@ export default function UsersList() {
         },
         {
             name: "IsBuyer",
-            selector: (row) => row.IsBuyer,
+            selector: (row) => row.IsBuyer.toString(),
         },
         {
             name: "IsSeller",
-            selector: (row) => row.IsSeller,
+            selector: (row) => row.IsSeller.toString(),
         },
         {
             name: "Action",

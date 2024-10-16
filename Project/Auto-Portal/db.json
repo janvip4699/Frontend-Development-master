@@ -1,106 +1,88 @@
 {
   "sell-car": [
     {
-      "id": "71d4",
+      "id": "3cbe",
       "city": "Rajkot",
+      "make": "Tata",
+      "model": "Nexon",
+      "fuel": "Petrol",
+      "color": "#4c4343",
+      "km": "1500",
+      "owner": "Second owner",
+      "price": "11 Lakh",
+      "imgs": "https://imgd.aeplcdn.com/664x374/n/cw/ec/175993/kushaq-exterior-right-front-three-quarter.jpeg?isig=0&q=80",
+      "seller_uid": "7P5S930NZ5S8jNoveXRhWxHmMri2",
+      "buyer_uid": "7eu8Q2GI04ZlTOMdAPoa7HN1Z2x1",
+      "status": "sold"
+    },
+    {
+      "id": "5bfa",
+      "city": "Ahemdabad",
       "make": "Tata",
       "model": "Harrier",
       "fuel": "Petrol",
-      "color": "Black",
-      "km": "2000",
+      "color": "#000000",
+      "km": "4000",
       "owner": "First owner",
-      "price": "20 Lakh",
-      "imgs": "https://imgd.aeplcdn.com/1280x720/n/cw/ec/1/versions/tata-harrier-2021-xz-plus-dark-edition1645784748224.jpg?q=80"
+      "price": "13 Lakh",
+      "imgs": "https://imgd.aeplcdn.com/1280x720/n/cw/ec/1/versions/tata-harrier-2021-xz-plus-dark-edition1645784748224.jpg?q=80",
+      "seller_uid": "7P5S930NZ5S8jNoveXRhWxHmMri2",
+      "buyer_uid": "7eu8Q2GI04ZlTOMdAPoa7HN1Z2x1",
+      "status": "sold"
     },
     {
-      "id": "7bb3",
-      "city": "Ahemdabad",
-      "make": "Tata",
-      "model": "Tiago",
-      "fuel": "Others",
-      "color": "Grey",
-      "km": "1000",
-      "owner": "First owner",
-      "price": "11 Lakh",
-      "imgs": "https://imgd-ct.aeplcdn.com/664x415/n/c1hbmbb_1688469.jpg?q=80"
-    },
-    {
-      "id": "00c3",
-      "city": "Rajkot",
-      "make": "Tata",
-      "model": "Nexon",
+      "id": "48a7",
+      "city": "Mumbai",
+      "make": "Honda",
+      "model": "Elevate",
       "fuel": "Petrol",
-      "color": "Blue",
-      "km": "3000",
-      "owner": "Four or more owners",
-      "price": "16 Lakh",
-      "imgs": "https://imgd-ct.aeplcdn.com/664x415/n/c1hbmbb_1688469.jpg?q=80"
+      "color": "#c91313",
+      "km": "1500",
+      "owner": "Third owner",
+      "price": "11 Lakh",
+      "imgs": "https://imgd-ct.aeplcdn.com/664x415/n/c1hbmbb_1688469.jpg?q=80",
+      "seller_uid": "7P5S930NZ5S8jNoveXRhWxHmMri2",
+      "buyer_uid": "",
+      "status": "available"
     },
     {
-      "id": "1997",
-      "city": "Rajkot",
+      "id": "f924",
+      "city": "Baroda",
       "make": "Hyundai",
       "model": "Creta",
       "fuel": "Diesel",
-      "color": "Grey",
-      "km": "1500",
-      "owner": "Second owner",
-      "price": "11 Lakh",
-      "imgs": "https://imgd.aeplcdn.com/370x208/n/oqevvab_1673975.jpg?q=80"
-    },
-    {
-      "id": "a975",
-      "city": "Mumbai",
-      "make": "Audi",
-      "model": "Tiago",
-      "fuel": "Diesel",
-      "color": "Blue",
+      "color": "#582c2c",
       "km": "2000",
-      "owner": "First owner",
+      "owner": "Four or more owners",
       "price": "10 Lakh",
-      "imgs": "https://imgd-ct.aeplcdn.com/1056x660/n/4x5alcb_1713653.jpg?q=80"
-    },
-    {
-      "id": "48a5",
-      "city": "Pune",
-      "make": "Tata",
-      "model": "Tiago",
-      "fuel": "Others",
-      "color": "Grey",
-      "km": "1500",
-      "owner": "First owner",
-      "price": "11 Lakh",
-      "imgs": "https://imgd.aeplcdn.com/664x374/n/cw/ec/175993/kushaq-exterior-right-front-three-quarter.jpeg?isig=0&q=80"
-    },
-    {
-      "id": "7095",
-      "city": "Ahemdabad",
-      "make": "Tata",
-      "model": "Nexon",
-      "fuel": "Diesel",
-      "color": "Purple",
-      "km": "3000",
-      "owner": "Second owner",
-      "price": "10 Lakh",
-      "imgs": "https://imgd-ct.aeplcdn.com/1056x660/n/4x5alcb_1713653.jpg?q=80"
+      "imgs": "https://imgd.aeplcdn.com/370x208/n/oqevvab_1673975.jpg?q=80",
+      "seller_uid": "7P5S930NZ5S8jNoveXRhWxHmMri2",
+      "buyer_uid": "",
+      "status": "available"
     }
   ],
   "users": [
     {
-      "id": "1643",
-      "UserName": "abc",
-      "Email": "abc@gmail.com",
-      "Password": "abc@123",
-      "Role": "user",
-      "ProfileImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLe5PABjXc17cjIMOibECLM7ppDwMmiDg6Dw&s"
-    },
-    {
-      "id": "a749",
-      "UserName": "Janvi",
+      "id": "9303",
+      "UserName": "Janvi Parmar",
       "Email": "janvip4699@gmail.com",
       "Password": "Janvi@4699",
       "Role": "user",
-      "ProfileImage": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dXNlcnxlbnwwfHwwfHx8MA%3D%3D"
+      "ProfileImage": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dXNlcnxlbnwwfHwwfHx8MA%3D%3D",
+      "UID": "7P5S930NZ5S8jNoveXRhWxHmMri2",
+      "IsBuyer": false,
+      "IsSeller": true
+    },
+    {
+      "id": "2629",
+      "UserName": "Prerana",
+      "Email": "prerana@gmail.com",
+      "Password": "prerana1234",
+      "Role": "user",
+      "ProfileImage": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dXNlcnxlbnwwfHwwfHx8MA%3D%3D",
+      "UID": "7eu8Q2GI04ZlTOMdAPoa7HN1Z2x1",
+      "IsBuyer": true,
+      "IsSeller": false
     }
   ],
   "car-make": [
@@ -135,6 +117,10 @@
     {
       "id": "ffc6",
       "make": "Honda"
+    },
+    {
+      "id": "6a11",
+      "make": "Skoda"
     }
   ],
   "car-model": [
@@ -162,6 +148,11 @@
       "id": "42aa",
       "model": "Elevate",
       "makeId": "ffc6"
+    },
+    {
+      "id": "f992",
+      "model": "Kushaq",
+      "makeId": "6a11"
     }
   ],
   "locations": [
@@ -188,6 +179,32 @@
     {
       "id": "2835",
       "city": "Surat"
+    }
+  ],
+  "contact-us": [
+    {
+      "id": "96b2",
+      "firstname": "Janvi",
+      "lastname": "Parmar",
+      "email": "janvi@gmail.com",
+      "phone": "9876543210",
+      "message": "please send car details"
+    },
+    {
+      "id": "b648",
+      "firstname": "Prerana",
+      "lastname": "Dave",
+      "email": "pd@gmail.com",
+      "phone": "1234567890",
+      "message": "hello\n"
+    },
+    {
+      "id": "5088",
+      "firstname": "abc",
+      "lastname": "abc",
+      "email": "abc@gmail.com",
+      "phone": "111111111111",
+      "message": "abc"
     }
   ]
 }

@@ -3,6 +3,7 @@ import { Select, Option } from "@material-tailwind/react";
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
+import { useUserAuth } from '../../Context/UserAuthContext';
 
 const SellCarForm = () => {
 
@@ -10,6 +11,8 @@ const SellCarForm = () => {
     const [carMakeData, setcarMakeData] = useState();
     const [carModelData, setcarModelData] = useState();
     const [citiesData, setcitiesData] = useState();
+    const { user } = useUserAuth();
+    const [UserData, setUserData] = useState();
 
     const city = useRef();
     const make = useRef();
@@ -23,8 +26,20 @@ const SellCarForm = () => {
 
     const Navigate = useNavigate();
 
-    const submitData = (e) => {
+    useEffect(() => {
+        const fetchUserData = async () => {
+          if (user) {
+            const response = await axios.get(`http://localhost:4000/users`);
+            setUserData(response.data.filter((e) => e.UID == user.uid));
+          }
+        };
+    
+        fetchUserData();
+      });
+
+    const submitData = async(e) => {
         e.preventDefault();
+        UserData[0].IsSeller = true;
         var ins = {
             city: city.current.value,
             make: make.current.value,
@@ -34,10 +49,16 @@ const SellCarForm = () => {
             km: km.current.value,
             owner: owner.current.value,
             price: price.current.value,
-            imgs: imgs.current.value
+            imgs: imgs.current.value,
+            seller_uid: user.uid,
+            buyer_uid: "",
+            status: "available",
         }
 
-        axios.post("http://localhost:4000/sell-car", ins).then(() => {
+        await axios.put(`http://localhost:4000/users/${UserData[0].id}`, UserData[0]);
+
+        await axios.post("http://localhost:4000/sell-car", ins).then(() => {
+             
             Swal.fire({
                 title: "Your AD posted successfully!!",
                 showClass: {
@@ -55,7 +76,7 @@ const SellCarForm = () => {
               `
                 }
             });
-            Navigate("/home");
+            Navigate("/user-cars");
         })
         e.target.reset();
     }
@@ -177,7 +198,7 @@ const SellCarForm = () => {
                                     <input
                                         id="color"
                                         name="color"
-                                        type="text"
+                                        type="color"
                                         autoComplete="color"
                                         className="block w-52 rounded-md border-0 px-2 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6"
                                         ref={color}

@@ -1,5 +1,5 @@
 import React from 'react'
-import profilePic from '../assets/images/janvi.jpeg'
+import profilePic from '../assets/images/profilePic.avif'
 import { HERO_CONTENT } from '../constants'
 import { motion } from 'framer-motion'
 
@@ -22,7 +22,7 @@ const childVariants = {
 
 const Hero = () => {
   return (
-    <div className='pb-4 lg:mb-36'>
+    <div className='pb-4 lg:mb-36 mt-20' id="home">
       <div className='flex flex-wrap lg:flex-row-reverse'>
         <div className='w-full lg:w-1/2'>
           <div className='flex justify-center lg:p-8'>

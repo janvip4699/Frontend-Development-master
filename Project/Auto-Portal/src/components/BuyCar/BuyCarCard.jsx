@@ -1,17 +1,16 @@
-import React, { useState, useEffect, useRef } from 'react'
-import axios from 'axios'
+import React from 'react'
 import { useNavigate } from 'react-router-dom'
 
 const BuyCarCard = ({ filteredCars }) => {
+
+  const Navigate = useNavigate();
 
   return (
     <div className="text-black rounded-xl mb-2 cursor-pointor grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5 mt-5">
       {
         filteredCars && filteredCars.map((item) => (
-
-
           <div class="max-w-sm rounded overflow-hidden shadow-lg">
-            <img className="w-[380px] h-[250px]" src={item.imgs} alt="CarImg"/>
+            <img className="w-[380px] h-[250px]" src={item.imgs} alt="CarImg" />
             <div class="px-6 py-4">
               <div class="font-bold text-xl mb-2">{item.make} <span>{item.model}</span></div>
               <p className='text-primary font-semibold text-sm'>{item.km} Km | {item.fuel} | {item.city} </p>

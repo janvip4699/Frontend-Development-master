@@ -66,6 +66,12 @@ export default function SellcarList() {
             wrap: true
         },
         {
+            name: "Status",
+            selector: (row) => row.status,
+            sortable: true,
+            wrap: true
+        },
+        {
             name: "Car Images",
             selector: (row) => (<img src={row.imgs} className="w-16 h-16"></img>),
             sortable: true,
