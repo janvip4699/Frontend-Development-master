@@ -12,7 +12,7 @@ const Sidebar = () => {
         <h1 className='text-3xl font-bold mt-3'>Admin Panel</h1>
         <div>
           <ul className='list-none flex-col gap-10 mt-12 text-md'>
-            <Link to="/admin"><li className='rounded-md p-2 my-5 transition-all duration-300 ease-in-out hover:bg-primary/45 flex gap-5 items-center'>Home</li></Link>
+            <Link to="/admin/dashboard"><li className='rounded-md p-2 my-5 transition-all duration-300 ease-in-out hover:bg-primary/45 flex gap-5 items-center'>Home</li></Link>
             <Link to="/admin/users"><li className='rounded-md p-2 my-5 transition-all duration-300 ease-in-out hover:bg-primary/45 flex gap-5 items-center'>Users</li></Link>
             <Link to="/admin/sellers/sell-cars-list"><li className='rounded-md p-2 my-5 transition-all duration-300 ease-in-out hover:bg-primary/45 flex gap-5 items-center'>Sell Cars List</li></Link>
             <div className='group'>
