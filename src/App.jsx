@@ -37,7 +37,7 @@ import Contacts from './components/Admin/Contacts/Contacts'
 export default function App() {
   return (
     <UserAuthContextProvider>
-      <BrowserRouter>
+      <BrowserRouter basename='/auto-portal'>
         <Routes>
           
           <Route path="/home" element={<ProtectedRoute><Home /></ProtectedRoute>}/>

@@ -42,8 +42,8 @@
       "price": "11 Lakh",
       "imgs": "https://imgd-ct.aeplcdn.com/664x415/n/c1hbmbb_1688469.jpg?q=80",
       "seller_uid": "7P5S930NZ5S8jNoveXRhWxHmMri2",
-      "buyer_uid": "",
-      "status": "available"
+      "buyer_uid": "7P5S930NZ5S8jNoveXRhWxHmMri2",
+      "status": "sold"
     },
     {
       "id": "f924",
@@ -59,20 +59,24 @@
       "seller_uid": "7P5S930NZ5S8jNoveXRhWxHmMri2",
       "buyer_uid": "",
       "status": "available"
+    },
+    {
+      "id": "7f98",
+      "city": "Ahemdabad",
+      "make": "Tata",
+      "model": "Nexon",
+      "fuel": "Petrol",
+      "color": "#000000",
+      "km": "1000",
+      "owner": "First owner",
+      "price": "11 Lakh",
+      "imgs": "https://imgd-ct.aeplcdn.com/1056x660/n/4x5alcb_1713653.jpg?q=80",
+      "seller_uid": "CWv9IjML58eTdz6akk08PRVX0Xg2",
+      "buyer_uid": "",
+      "status": "available"
     }
   ],
   "users": [
-    {
-      "id": "9303",
-      "UserName": "Janvi Parmar",
-      "Email": "janvip4699@gmail.com",
-      "Password": "Janvi@4699",
-      "Role": "user",
-      "ProfileImage": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dXNlcnxlbnwwfHwwfHx8MA%3D%3D",
-      "UID": "7P5S930NZ5S8jNoveXRhWxHmMri2",
-      "IsBuyer": false,
-      "IsSeller": true
-    },
     {
       "id": "2629",
       "UserName": "Prerana",
@@ -83,6 +87,17 @@
       "UID": "7eu8Q2GI04ZlTOMdAPoa7HN1Z2x1",
       "IsBuyer": true,
       "IsSeller": false
+    },
+    {
+      "id": "a131",
+      "UserName": "Janvi Parmar",
+      "Email": "janvi@gmail.com",
+      "Password": "janvi@123",
+      "Role": "user",
+      "ProfileImage": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dXNlcnxlbnwwfHwwfHx8MA%3D%3D",
+      "UID": "CWv9IjML58eTdz6akk08PRVX0Xg2",
+      "IsBuyer": false,
+      "IsSeller": true
     }
   ],
   "car-make": [
